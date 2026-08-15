@@ -1,0 +1,2091 @@
+.ms-inner{
+
+      width:100%;
+
+    margin:0 auto;
+
+    padding:0 40px;
+
+}
+/**++++++++++++++++++++ CTA ++++++++++**********/
+body.page-ms {
+
+    --cta-primary: #111827;
+    --cta-secondary: #0f2f3a;
+    --cta-text: #ffffff;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(37, 99, 235, .10),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(236, 72, 153, .08),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(6, 182, 212, .07),
+            transparent 30%
+        ),
+        #07101f;
+
+    color: #ffffff;
+}
+body.page-ms.cta-box{
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #7c3aed,
+        #14b8a6
+    );
+
+    color:#ffffff;
+
+}
+/* =========================================
+   COMMON SECTION REVEAL
+========================================= */
+
+.ms-reveal {
+    opacity: 0;
+    transform: translateY(60px);
+
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s cubic-bezier(.22, 1, .36, 1);
+
+}
+
+
+/* Visible state */
+
+.ms-reveal.ms-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*==================================================
+            MS Hero
+==================================================*/
+.ms-hero {  
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 92vh;
+    overflow: hidden;
+     background-image:
+        url("../images/hero/ms1.webp");
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+background-position: center 20%;
+
+}
+.ms-hero .container{
+   width:min(97%, 1600px);
+    flex :1;
+    max-width:1600px;
+
+    margin:0 auto;
+
+    padding:0;
+    position:relative;
+
+    z-index:2;
+    align-items: center;
+
+}
+.ms-hero-content{
+   width: 100%;
+       text-align: right;
+
+}
+.ms-hero h1 {
+    font-size: clamp(110px, 8vw, 120px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 28px;
+    text-align: center;
+    margin-top :120px;
+    background: linear-gradient(86.95deg, #FFBA60 27.39%, #FFEC6F 70.68%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    opacity: 0;
+    transform: translateY(50px);
+    animation: heroFadeUp .8s ease forwards;
+}
+.ms-hero-tagline {
+    width: 100%;
+    padding-top: 240px;
+    text-align: center;
+        white-space: nowrap;
+
+}
+.ms-hero-tagline p {
+
+    display: inline-block;
+
+    max-width: 1100px;
+
+    font-size: clamp(25px, 1.7vw, 28px);
+
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    letter-spacing: .5px;
+
+    color: rgba(48, 118, 40, 0.9);
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    animation: heroFadeUp .8s ease forwards;
+
+    animation-delay: .4s;
+     margin-left: 520px;
+
+}
+.ms-highlight span.accent {
+    color: #FF9900;
+}
+.ms-highlight .logo1 {
+    color: #2563eb; /* Sapphire blue */
+}
+
+@keyframes heroFadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.ms-highlight {
+    display: inline-block;
+    align-items: center;
+    margin-top: 35px;
+    padding: 10px 10px 10px 12px; /* Added right and vertical padding */
+    border-left: 5px solid #FF9900;
+    width: 1100px;              /* change this */
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+ margin-left: 220px;
+    /* Frosted glass/Glossy background properties */
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.37);
+    white-space: nowrap;
+
+    /* Animation styling stays the same */
+    opacity: 0;
+    transform: translateY(40px);
+    animation: heroFadeUp .8s ease forwards;
+    animation-delay: .4s;
+
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 991px) {
+
+    .ms-highlight {
+        width: calc(100% - 60px);
+
+        margin-left: 30px;
+        margin-right: 30px;
+
+        font-size: 30px;
+        line-height: 1.35;
+
+        white-space: normal;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .ms-highlight {
+        width: calc(100% - 40px);
+
+        margin-left: 20px;
+        margin-right: 20px;
+
+        margin-top: 25px;
+
+        padding: 8px 12px;
+
+        border-left-width: 4px;
+
+        font-size: 24px;
+        line-height: 1.35;
+
+        white-space: normal;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .ms-highlight {
+        width: calc(100% - 30px);
+
+        margin-left: 15px;
+        margin-right: 15px;
+
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+}
+/*==================================================
+                Large Tablet
+==================================================*/
+
+@media (max-width:1200px){
+
+    .multi-hero{
+
+        min-height:85vh;
+
+        background-position:center;
+
+    }
+
+    .multi-hero .container{
+
+        width:95%;
+
+    }
+
+    .multi-hero h1{
+
+        font-size:clamp(72px,8vw,90px);
+
+        margin-bottom:20px;
+
+    }
+
+    .multi-hero p{
+
+        font-size:24px;
+
+        line-height:1.7;
+
+        max-width:700px;
+
+        margin-left:auto;
+
+    }
+
+}
+
+.ms-hero-tagline {
+    width: 100%;
+    padding-top: 240px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.ms-hero-tagline p {
+    display: inline-block;
+
+    max-width: 1100px;
+
+    font-size: clamp(25px, 1.7vw, 28px);
+
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .5px;
+
+    color: rgba(48, 118, 40, 0.9);
+
+    opacity: 0;
+    transform: translateY(30px);
+
+    animation: heroFadeUp .8s ease forwards;
+    animation-delay: .4s;
+
+    margin-left: 520px;
+}
+
+.ms-highlight span.accent {
+    color: #FF9900;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 991px) {
+
+    .ms-hero-tagline {
+        padding-top: 200px;
+        white-space: normal;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .ms-hero-tagline p {
+        margin-left: 0;
+
+        max-width: 850px;
+
+        font-size: clamp(22px, 3vw, 26px);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .ms-hero-tagline {
+        padding-top: 160px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        white-space: normal;
+    }
+
+    .ms-hero-tagline p {
+        margin-left: 0;
+
+        max-width: 100%;
+
+        font-size: 21px;
+        line-height: 1.45;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .ms-hero-tagline {
+        padding-top: 130px;
+    }
+
+    .ms-hero-tagline p {
+        font-size: 19px;
+        line-height: 1.4;
+    }
+
+}
+/*==================================================
+                Tablet
+==================================================*/
+
+@media (max-width:991px){
+
+    .ms-hero{
+
+        min-height:80vh;
+
+        background-position:center;
+
+        padding:120px 0 80px;
+
+    }
+
+    .ms-hero .container{
+
+        width:92%;
+
+    }
+
+    .ms-hero-content{
+
+        text-align:center;
+
+    }
+
+    .ms-hero h1{
+
+        font-size:clamp(54px,9vw,72px);
+
+        line-height:1.15;
+
+        margin-bottom:18px;
+
+    }
+
+    .ms-hero p{
+
+        font-size:20px;
+
+        line-height:1.6;
+
+        max-width:650px;
+
+        margin:0 auto;
+
+    }
+
+}
+
+/* ==================================================
+   MANAGED SERVICES
+   INTRODUCTION
+================================================== */
+
+.ms-intro {
+
+    position: relative;
+
+    padding: 70px 0;
+}
+
+
+/* ------------------------------------------
+   SECTION HEADING
+------------------------------------------ */
+
+
+
+.ms-section-heading h2 {
+
+color: #57dcde;
+    font-size: clamp(
+        32px,
+        5vw,
+        42px
+    );
+
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+    white-space: nowrap;
+
+}
+
+/* ------------------------------------------
+   SECTION TAG
+------------------------------------------ */
+.ms-section-tag {
+
+    display: inline-block;
+
+    font-size: clamp(48px, 3vw, 50px);
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    background: linear-gradient(
+        90deg,
+        #FF4FA3 0%,
+        #5B7CFF 50%,
+        #FFEC6F 100%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+
+/* ------------------------------------------
+   MAIN GRID
+------------------------------------------ */
+
+.ms-intro-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, .95fr);
+
+    gap: 35px;
+
+    align-items: stretch;
+
+}
+
+
+/* ------------------------------------------
+   IMAGE
+------------------------------------------ */
+
+.ms-intro-image {
+
+    position: relative;
+
+    min-height: 620px;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    background: #0b1124;
+
+    border: 1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .08
+        );
+
+    box-shadow:
+        0 30px 70px
+        rgba(
+            0,
+            0,
+            0,
+            .35
+        );
+
+}
+
+
+.ms-intro-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform .8s ease;
+
+}
+
+
+.ms-intro-image:hover img {
+
+    transform: scale(1.04);
+
+}
+
+.ms-image-label {
+
+    position: absolute;
+
+    left: 28px;
+
+    bottom: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+
+.ms-image-label span {
+
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #22d3ee;
+
+    box-shadow:
+        0 0 15px
+        rgba(
+            34,
+            211,
+            238,
+            .9
+        );
+
+}
+
+/********
+*animation intro ***********/
+
+/* =========================================
+   Managed Services Intro Animation
+========================================= */
+
+.ms-intro-image,
+.ms-intro-content {
+    opacity: 0;
+    transition:
+        opacity 0.9s ease,
+        transform 1s cubic-bezier(.22, 1, .36, 1);
+}
+/* Content enters from RIGHT */
+.ms-intro-content {
+    transform: translateX(100px);
+}
+
+/* Image enters from LEFT */
+.ms-intro-image {
+    transform: translateX(-100px);
+}
+/* Activated state */
+.ms-intro-image.ms-show,
+.ms-intro-content.ms-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* ------------------------------------------
+   CONTENT CARD
+------------------------------------------ */
+
+.ms-intro-card {
+
+    position: relative;
+
+    padding: 58px 52px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(
+                15,
+                23,
+                42,
+                .98
+            ),
+            rgba(
+                10,
+                18,
+                38,
+                .96
+            )
+        );
+
+    border: 1px solid
+        rgba(
+            96,
+            165,
+            250,
+            .16
+        );
+
+    box-shadow:
+        0 30px 70px
+        rgba(
+            0,
+            0,
+            0,
+            .30
+        );
+
+}
+
+/* ------------------------------------------
+   CARD HEADING
+------------------------------------------ */
+
+.ms-intro-content h3 {
+
+    position: relative;
+
+    margin-bottom: 28px;
+
+    color: #ffffff;
+
+    font-size: clamp(
+        30px,
+        3vw,
+        46px
+    );
+
+    font-weight: 800;
+
+    line-height: 1.08;
+
+    letter-spacing: -1px;
+
+}
+
+
+/* ------------------------------------------
+   TEXT
+------------------------------------------ */
+
+.ms-intro-content p {
+
+    position: relative;
+
+    margin-bottom: 18px;
+
+    color: #aab5c8;
+
+    font-size: 23px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ------------------------------------------
+   MINI FEATURES
+------------------------------------------ */
+
+.ms-intro-features {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 28px;
+
+}
+
+
+/* ------------------------------------------
+   TABLET
+------------------------------------------ */
+
+@media (max-width: 991px) {
+
+    .ms-intro {
+
+        padding: 100px 0;
+
+    }
+
+    .ms-intro-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .ms-intro-image {
+
+        min-height: 480px;
+
+    }
+
+    .ms-intro-card {
+
+        padding: 45px 38px;
+
+    }
+
+}
+
+
+/* ------------------------------------------
+   MOBILE
+------------------------------------------ */
+
+@media (max-width: 600px) {
+
+    .ms-intro {
+
+        padding: 75px 0;
+
+    }
+
+    .ms-section-tag {
+
+        padding:
+            13px
+            30px
+            13px
+            25px;
+
+        font-size: 24px;
+
+        letter-spacing: 2.5px;
+
+    }
+
+    .ms-section-heading {
+
+        margin-bottom: 45px;
+
+    }
+
+    .ms-section-heading h2 {
+
+        margin-top: 22px;
+
+        font-size: 39px;
+
+        letter-spacing: -1px;
+
+    }
+
+    .ms-intro-image {
+
+        min-height: 360px;
+
+        border-radius: 18px;
+
+    }
+
+    .ms-intro-card {
+
+        padding: 35px 25px;
+
+        border-radius: 18px;
+
+    }
+
+    .ms-intro-card h3 {
+
+        font-size: 31px;
+
+    }
+
+    .ms-intro-card p {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+    }
+
+    .ms-intro-features {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/* =========================================
+   iNAS NEXT-GEN MANAGEMENT ADVANTAGE
+========================================= */
+
+.ms-advantage {
+    position: relative;
+
+    padding: 110px 0 120px;
+
+    background: url("../images/managed-services/ms-lifecycle.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    isolation: isolate;
+}
+
+
+/* Dark overlay */
+.ms-advantage::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(5, 8, 12, 0.72);
+
+    z-index: -1;
+}
+
+
+/* -----------------------------------------
+   SECTION HEADING
+----------------------------------------- */
+
+.ms-advantage-heading {
+    margin-bottom: 60px;
+}
+
+.ms-advantage-heading h2 {
+    margin: 0;
+}
+
+.ms-advantage-heading h2 span {
+    color: #c7f36a;
+}
+
+
+/* -----------------------------------------
+   CARD GRID
+----------------------------------------- */
+
+.ms-advantage-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+
+}
+
+
+/* -----------------------------------------
+   CARD
+----------------------------------------- */
+
+.ms-advantage-card {
+
+    position: relative;
+
+    min-height: 200px;
+
+    padding: 28px 36px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background:
+        rgba(255, 255, 255, 0.035);
+
+    border: 1px solid
+        rgba(199, 243, 106, 0.65);
+
+    border-radius: 24px;
+
+    color: #d9dee7;
+
+    overflow: hidden;
+
+    transition:
+        background 0.45s ease,
+        border-color 0.45s ease,
+        transform 0.45s ease,
+        box-shadow 0.45s ease,
+        color 0.45s ease;
+
+}
+
+
+/* subtle glow */
+
+.ms-advantage-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -90px;
+    right: -70px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(199, 243, 106, 0.10),
+            transparent 70%
+        );
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.45s ease;
+
+}
+
+/* =========================================
+   ADVANTAGE CARD REVEAL
+   ========================================= */
+
+.ms-advantage-card {
+    opacity: 0;
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+
+/* When section becomes visible */
+
+.ms-advantage.visible .ms-advantage-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Stagger */
+
+.ms-advantage.visible .ms-advantage-card:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.ms-advantage.visible .ms-advantage-card:nth-child(2) {
+    transition-delay: 0.5s;
+}
+
+.ms-advantage.visible .ms-advantage-card:nth-child(3) {
+    transition-delay: 0.8s;
+}
+
+.ms-advantage.visible .ms-advantage-card:nth-child(4) {
+    transition-delay: 1.5s;
+}
+
+.ms-advantage.visible .ms-advantage-card:nth-child(5) {
+    transition-delay: 1.8s;
+}
+/* -----------------------------------------
+   HEADING
+----------------------------------------- */
+
+.ms-advantage-card h3 {
+
+    position: relative;
+
+    margin: 0 0 22px;
+
+    max-width: 520px;
+
+    color: #ffffff;
+
+    font-size: clamp(
+        25px,
+        2.2vw,
+        34px
+    );
+
+    font-weight: 700;
+
+    line-height: 1.12;
+
+    letter-spacing: -0.8px;
+
+    transition:
+        color 0.45s ease;
+
+}
+
+
+/* -----------------------------------------
+   DESCRIPTION
+----------------------------------------- */
+
+.ms-advantage-card p {
+
+    position: relative;
+
+    max-width: 540px;
+
+    margin: 0;
+
+    color: #aab3c3;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    transition:
+        color 0.45s ease;
+
+}
+
+
+/* -----------------------------------------
+   BOTTOM LINE
+----------------------------------------- */
+
+.ms-card-line {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+}
+
+
+.ms-card-line span {
+
+    width: 55px;
+    height: 1px;
+
+    background:
+        #c7f36a;
+
+    transition:
+        width 0.45s ease,
+        background 0.45s ease;
+
+}
+
+
+.ms-card-line i {
+
+    color: #c7f36a;
+
+    font-size: 14px;
+
+    transition:
+        color 0.45s ease,
+        transform 0.45s ease;
+
+}
+
+
+/* -----------------------------------------
+   HOVER
+----------------------------------------- */
+
+.ms-advantage-card:hover {
+
+    background: #ffffff;
+
+    border-color: #2563eb;
+
+    color: #172033;
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 24px 55px
+        rgba(0, 0, 0, 0.28);
+
+}
+
+
+.ms-advantage-card:hover::before {
+
+    opacity: 0;
+
+    transform: scale(1.3);
+
+}
+
+
+.ms-advantage-card:hover h3 {
+
+    color: #2563eb;
+
+}
+
+
+.ms-advantage-card:hover p {
+
+    color: #263246;
+
+}
+
+
+.ms-advantage-card:hover .ms-card-line span {
+
+    width: 90px;
+
+    background: #2563eb;
+
+}
+
+
+.ms-advantage-card:hover .ms-card-line i {
+
+    color: #2563eb;
+
+    transform: translateX(5px);
+
+}
+
+
+/* -----------------------------------------
+   FIFTH CARD
+----------------------------------------- */
+
+.ms-advantage-card-wide {
+
+    grid-column: 1 / -1;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .ms-advantage {
+
+        padding: 90px 0 100px;
+
+    }
+
+    .ms-advantage-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .ms-advantage-card-wide {
+
+        grid-column: auto;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .ms-advantage {
+
+        padding: 70px 0 80px;
+
+    }
+
+    .ms-advantage-heading {
+
+        margin-bottom: 40px;
+
+    }
+
+    .ms-advantage-grid {
+
+        gap: 18px;
+
+    }
+
+    .ms-advantage-card {
+
+        min-height: 270px;
+
+        padding: 30px 26px 26px;
+
+        border-radius: 20px;
+
+    }
+
+    .ms-advantage-card h3 {
+
+        font-size: 25px;
+
+    }
+
+    .ms-advantage-card p {
+
+        font-size: 15px;
+
+        line-height: 1.65;
+
+    }
+
+}
+
+/* MS lifecycle */
+
+/* =========================================================
+   MANAGED SERVICES LIFECYCLE
+   ========================================================= */
+
+.ms-lifecycle-section {
+    width: 100%;
+    padding: 100px 40px;
+    background: #0b0f14;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+/* =========================================================
+   FULL WIDTH IMAGE
+   ========================================================= */
+
+.ms-lifecycle-image {
+    position: relative;
+
+    width: 100%;
+    height: 430px;
+
+    margin-bottom: 65px;
+
+    overflow: hidden;
+    border-radius: 24px;
+
+    background: #11161d;
+}
+
+.ms-lifecycle-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transform: scale(1.02);
+
+    transition: transform 0.8s ease;
+}
+
+.ms-lifecycle-image:hover img {
+    transform: scale(1.06);
+}
+
+
+/* Dark overlay */
+
+.ms-lifecycle-image-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 8, 12, 0.82) 0%,
+            rgba(5, 8, 12, 0.55) 45%,
+            rgba(5, 8, 12, 0.25) 100%
+        );
+
+    z-index: 1;
+}
+
+
+/* Image text */
+
+.ms-lifecycle-image-content {
+    position: absolute;
+
+    left: 60px;
+    bottom: 55px;
+
+    max-width: 600px;
+
+    z-index: 2;
+}
+
+.ms-lifecycle-image-content h3 {
+    margin: 0 0 14px;
+
+    font-size: 32px;
+    font-weight: 600;
+
+    color: #ffffff;
+}
+
+.ms-lifecycle-image-content p {
+    margin: 0;
+
+    max-width: 540px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+/* =========================================================
+   3 × 2 GRID
+   ========================================================= */
+
+.ms-lifecycle-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* =========================================================
+   INNER DARK GLOW
+   ========================================================= */
+
+.ms-lifecycle-item::after {
+    content: "";
+
+    position: absolute;
+    inset: 1px;
+
+    border-radius: 19px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(255, 255, 255, 0.015)
+        );
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.ms-lifecycle-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.055);
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease;
+}
+
+.ms-lifecycle-item:hover .ms-lifecycle-icon {
+    transform: translateY(-3px) scale(1.05);
+
+    background: rgba(255, 255, 255, 0.09);
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.ms-lifecycle-content h3 {
+    margin: 0 0 12px;
+
+    font-size: 21px;
+    font-weight: 600;
+
+    color: #ffffff;
+}
+
+.ms-lifecycle-content p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.62);
+}
+
+
+/* =========================================================
+   RAINBOW BORDER ANIMATION
+   ========================================================= */
+
+@keyframes msRainbowRotate {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .ms-lifecycle-section {
+        padding: 80px 30px;
+    }
+
+    .ms-section-heading h2 {
+        font-size: 36px;
+    }
+
+    .ms-lifecycle-image {
+        height: 380px;
+    }
+
+    .ms-lifecycle-image-content {
+        left: 40px;
+        bottom: 40px;
+    }
+
+    .ms-lifecycle {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .ms-lifecycle-section {
+        padding: 70px 20px;
+    }
+
+    .ms-section-heading h2 {
+        font-size: 30px;
+    }
+
+    .ms-section-heading p {
+        font-size: 15px;
+    }
+
+    .ms-lifecycle-image {
+        height: 340px;
+        border-radius: 18px;
+    }
+
+    .ms-lifecycle-image-content {
+        left: 25px;
+        right: 25px;
+        bottom: 30px;
+    }
+
+    .ms-lifecycle-image-content h3 {
+        font-size: 25px;
+    }
+
+    .ms-lifecycle-image-content p {
+        font-size: 14px;
+    }
+
+    .ms-lifecycle {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ms-lifecycle-item {
+        min-height: auto;
+        padding: 28px;
+    }
+
+}
+
+/* =========================================================
+   MANAGED SERVICES LIFECYCLE
+   ========================================================= */
+
+.ms-lifecycle-section {
+    width: 100%;
+    padding: 100px 40px;
+    background: #0b0f14;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.ms-section-heading {
+    max-width: 1400px;
+    margin: 0 auto 55px;
+}
+
+
+.ms-section-heading .section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.ms-section-heading p {
+    margin: 0 auto;
+
+    font-size: 24px;
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.62);
+}
+
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.ms-lifecycle-card {
+    position: relative;
+
+    height: 310px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: #11161d;
+
+    cursor: pointer;
+
+    isolation: isolate;
+
+    transition:
+        transform 0.45s ease,
+        box-shadow 0.45s ease;
+}
+
+
+/* =========================================================
+   BACKGROUND IMAGE
+   ========================================================= */
+
+.ms-lifecycle-card-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -3;
+
+    transition:
+        transform 0.7s ease,
+        opacity 0.6s ease;
+}
+
+
+/* =========================================================
+   IMAGE DARKENING
+   ========================================================= */
+/* 
+.ms-lifecycle-gradient {
+    position: absolute;
+    inset: 0;
+
+    z-index: -2;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(5, 8, 12, 0.05) 15%,
+            rgba(5, 8, 12, 0.35) 45%,
+            rgba(5, 8, 12, 0.95) 100%
+        );
+
+    transition:
+        background 0.6s ease,
+        opacity 0.6s ease;
+} */
+
+
+/* =========================================================
+   PREVIEW TITLE
+   ========================================================= */
+
+.ms-lifecycle-preview {
+    position: absolute;
+
+    left: 30px;
+    right: 30px;
+    bottom: 28px;
+
+    z-index: 2;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.5s ease;
+}
+
+.ms-lifecycle-preview h3 {
+    margin: 0;
+
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.05;
+
+    letter-spacing: -0.5px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================================================
+   HOVER DETAILS
+   ========================================================= */
+
+.ms-lifecycle-details {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 35px;
+
+    z-index: 3;
+
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.5s ease;
+}
+
+
+.ms-lifecycle-details h3 {
+    margin: 0 0 12px;
+
+    font-size: 33px;
+    font-weight: 00;
+
+    color: #ffffff;
+}
+
+
+.ms-lifecycle-details p {
+    max-width: 430px;
+
+    margin: 0;
+
+    font-size: 23px;
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.ms-lifecycle-icon {
+    width: 50px;
+    height: 50px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    color: #b2c12f;
+
+    font-size: 19px;
+
+    backdrop-filter: blur(10px);
+
+    transition:
+        transform 0.45s ease,
+        background 0.45s ease;
+}
+
+
+/* =========================================================
+   HOVER STATE
+   ========================================================= */
+
+.ms-lifecycle-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.45);
+}
+
+
+/* Image zoom + fade */
+
+.ms-lifecycle-card:hover .ms-lifecycle-card-image {
+    transform: scale(1.12);
+
+    opacity: 0;
+}
+
+
+/* Gradient becomes stronger */
+
+.ms-lifecycle-card:hover .ms-lifecycle-gradient {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(28, 36, 55, 0.96),
+            rgba(15, 20, 30, 0.98)
+        );
+}
+
+
+/* Hide preview */
+
+.ms-lifecycle-card:hover .ms-lifecycle-preview {
+    opacity: 0;
+
+    transform: translateY(-15px);
+}
+
+
+/* Show details */
+
+.ms-lifecycle-card:hover .ms-lifecycle-details {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* Icon hover */
+
+.ms-lifecycle-card:hover .ms-lifecycle-icon {
+    background: rgba(255, 255, 255, 0.14);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .ms-lifecycle-section {
+        padding: 80px 30px;
+    }
+
+    .ms-section-heading h2 {
+        font-size: 36px;
+    }
+
+    .ms-lifecycle-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .ms-lifecycle-section {
+        padding: 70px 20px;
+    }
+
+    .ms-section-heading {
+        margin-bottom: 40px;
+    }
+
+    .ms-section-heading h2 {
+        font-size: 30px;
+    }
+
+    .ms-section-heading p {
+        font-size: 15px;
+    }
+
+    .ms-lifecycle-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .ms-lifecycle-card {
+        height: 300px;
+    }
+
+    .ms-lifecycle-preview {
+        left: 25px;
+        right: 25px;
+        bottom: 25px;
+    }
+
+    .ms-lifecycle-preview h3 {
+        font-size: 28px;
+    }
+
+    .ms-lifecycle-details {
+        padding: 28px;
+    }
+
+}
+
+.ms-lifecycle-hero {
+    width: 100%;
+    max-width: 1400px;
+    height: 420px;
+    margin: 0 auto 60px;
+
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.ms-lifecycle-hero img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+
+    transition: transform 0.8s ease;
+}
+
+.ms-lifecycle-hero:hover img {
+    transform: scale(1.04);
+}
+
+
+/* Tablet */
+@media (max-width: 991px) {
+
+    .ms-lifecycle-hero {
+        height: 360px;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .ms-lifecycle-hero {
+        height: 280px;
+        margin-bottom: 40px;
+        border-radius: 18px;
+    }
+
+}
+
+
+/* Tablet */
+@media (max-width: 991px) {
+
+    .ms-lifecycle-hero {
+        height: 360px;
+    }
+
+    .ms-lifecycle-hero img {
+        object-position: center;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .ms-lifecycle-hero {
+        height: 280px;
+        margin-bottom: 40px;
+        border-radius: 18px;
+    }
+
+    .ms-lifecycle-hero img {
+        object-position: center;
+        transform: scale(1.05);
+    }
+
+}

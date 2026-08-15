@@ -1,0 +1,28 @@
+@media (max-width:992px){
+
+.hero{
+
+    text-align:center;
+
+}
+
+.hero-title{
+
+    font-size:2.7rem;
+
+}
+
+.hero-description{
+
+    margin:auto;
+    margin-bottom:35px;
+
+}
+
+.hero-image{
+
+    margin-top:60px;
+
+}
+
+}

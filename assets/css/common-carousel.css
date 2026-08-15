@@ -1,0 +1,840 @@
+/* =========================================================
+   COMMON CAROUSEL
+   Full-width / Large-screen version
+   ========================================================= */
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.common-carousel-section {
+    width: 100%;
+    min-height: 90vh;
+
+    padding: 70px 3vw;
+
+    display: flex;
+    align-items: center;
+}
+
+.common-carousel-container {
+    width: 100%;
+    max-width: none;
+    margin: 0 ;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.common-carousel-header {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto 40px;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+.common-carousel-header h2 {
+    margin: 0 0 16px;
+
+    font-size: clamp(26px, 3vw, 30px);
+
+    font-weight: 600;
+
+    line-height: 1.15;
+
+    color: #3a41c7;
+}
+
+.common-carousel-header p {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+/* =========================================================
+   CAROUSEL OUTER
+   ========================================================= */
+
+.common-carousel {
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* =========================================================
+   VIEWPORT
+   ========================================================= */
+
+.common-carousel-window {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 26px;
+}
+
+
+/* =========================================================
+   TRACK
+   ========================================================= */
+
+.common-carousel-track {
+    display: flex;
+
+    width: 100%;
+
+    transition:
+        transform 0.8s cubic-bezier(
+            0.77,
+            0,
+            0.175,
+            1
+        );
+}
+
+
+/* =========================================================
+   SLIDE
+   ========================================================= */
+
+.common-carousel-slide {
+    position: relative;
+
+    flex: 0 0 100%;
+
+    width: 100%;
+
+    min-height: 68vh;
+
+    display: grid;
+
+    grid-template-columns: 45% 55%;
+
+    overflow: hidden;
+
+    background: #11161d;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.common-carousel-image {
+    position: relative;
+
+    width: 100%;
+       height:auto;
+
+
+    min-height: 550px;
+
+    overflow: hidden;
+}
+
+.common-carousel-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transform: scale(1.02);
+
+    transition:
+        transform 1s ease,
+        filter 0.7s ease;
+}
+
+
+/* Image overlay */
+
+.common-carousel-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 8, 12, 0.05) 0%,
+            rgba(5, 8, 12, 0.12) 45%,
+            rgba(5, 8, 12, 0.72) 100%
+        );
+
+    pointer-events: none;
+}
+
+
+/* Active slide image zoom */
+
+.common-carousel-slide.active
+.common-carousel-image img {
+
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.common-carousel-content {
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 68vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 60px 6vw;
+
+    background:
+        linear-gradient(
+            135deg,
+            #151c25 0%,
+            #0d1218 100%
+        );
+}
+
+
+/* Number */
+
+.common-carousel-number {
+    display: block;
+
+    margin-bottom: 14px;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    color: rgba(255, 255, 255, 0.45);
+}
+
+
+/* Heading */
+
+.common-carousel-content h3 {
+    margin: 0 0 18px;
+
+    font-size: clamp(
+        38px,
+        3vw,
+        48px
+    );
+
+    font-weight: 600;
+
+    line-height: 1.1;
+
+    color: #9877f3;
+}
+
+
+/* Description */
+
+.common-carousel-description {
+    max-width: 650px;
+
+    margin: 0 0 35px;
+
+    font-size: 23px;
+
+    line-height: 1.7;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+.common-carousel-features {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+.common-carousel-feature {
+    display: grid;
+
+    grid-template-columns: 46px 1fr;
+
+    gap: 15px;
+
+    transition:
+        transform 0.35s ease;
+}
+
+.common-carousel-feature:hover {
+    transform: translateX(6px);
+}
+
+
+/* Feature icon */
+
+.common-carousel-feature-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background:
+        rgba(255, 255, 255, 0.06);
+
+    border:
+        1px solid rgba(
+            255,
+            255,
+            255,
+            0.10
+        );
+
+    color: #1619ca;
+
+    font-size: 22px;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+.common-carousel-feature:hover
+.common-carousel-feature-icon {
+
+    transform: scale(1.07);
+
+    background:
+        rgba(255, 255, 255, 0.11);
+}
+
+
+/* Feature heading */
+
+.common-carousel-feature h4 {
+    margin: 2px 0 6px;
+
+    font-size: 24px;
+
+    font-weight: 600;
+
+    color: #ffffff;
+}
+
+
+/* Feature description */
+
+.common-carousel-feature p {
+    margin: 0;
+
+    font-size: 20.4px;
+
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =========================================================
+   ARROWS
+   ========================================================= */
+
+.common-carousel-arrow {
+    flex: 0 0 auto;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid rgba(
+            255,
+            255,
+            255,
+            0.12
+        );
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.04);
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.common-carousel-arrow:hover {
+
+    transform: scale(1.08);
+
+    background:
+        rgba(255, 255, 255, 0.09);
+
+    border-color:
+        rgba(255, 255, 255, 0.28);
+}
+
+
+/* =========================================================
+   PAGINATION
+   ========================================================= */
+
+.common-carousel-pagination {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+.common-carousel-dot {
+
+    width: 28px;
+    height: 3px;
+
+    padding: 0;
+
+    border: 0;
+
+    background:
+        rgba(255, 255, 255, 0.18);
+
+    cursor: pointer;
+
+    transition:
+        width 0.35s ease,
+        background 0.35s ease;
+}
+
+.common-carousel-dot.active {
+
+    width: 55px;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   ACTIVE SLIDE CONTENT ANIMATION
+   ========================================================= */
+
+.common-carousel-slide.active
+.common-carousel-content h3 {
+
+    animation:
+        commonCarouselTitle
+        0.7s
+        ease
+        both;
+}
+
+
+.common-carousel-slide.active
+.common-carousel-description {
+
+    animation:
+        commonCarouselDescription
+        0.7s
+        ease
+        0.1s
+        both;
+}
+
+
+.common-carousel-slide.active
+.common-carousel-feature {
+
+    animation:
+        commonCarouselFeature
+        0.6s
+        ease
+        both;
+}
+
+
+.common-carousel-slide.active
+.common-carousel-feature:nth-child(1) {
+    animation-delay: 0.15s;
+}
+
+
+.common-carousel-slide.active
+.common-carousel-feature:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+
+.common-carousel-slide.active
+.common-carousel-feature:nth-child(3) {
+    animation-delay: 0.35s;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes commonCarouselTitle {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateX(0);
+    }
+}
+
+
+@keyframes commonCarouselDescription {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateX(25px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateX(0);
+    }
+}
+
+
+@keyframes commonCarouselFeature {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =========================================================
+   LARGE TABLET
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .common-carousel-section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .common-carousel-content {
+        padding: 50px 45px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .common-carousel-section {
+
+        min-height: auto;
+
+        padding:
+            80px 30px;
+    }
+
+
+    .common-carousel-slide {
+
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+    }
+
+
+    .common-carousel-image {
+
+        height: 38vh;
+
+        min-height: 300px;
+    }
+
+
+    .common-carousel-content {
+
+        min-height: auto;
+
+        padding:
+            45px;
+    }
+
+
+    .common-carousel-content h3 {
+
+        font-size: 34px;
+    }
+
+
+    .common-carousel-description {
+
+        font-size: 2px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .common-carousel-section {
+
+        padding:
+            65px 18px;
+    }
+
+
+    .common-carousel-header {
+
+        margin-bottom: 35px;
+    }
+
+
+    .common-carousel-header h2 {
+
+        font-size: 30px;
+    }
+
+
+    .common-carousel-header p {
+
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+
+    .common-carousel {
+
+        gap: 8px;
+    }
+
+
+    .common-carousel-window {
+
+        border-radius: 18px;
+    }
+
+
+    .common-carousel-image {
+
+        height: 32vh;
+
+        min-height: 220px;
+    }
+
+
+    .common-carousel-content {
+
+        padding:
+            30px 25px;
+    }
+
+
+    .common-carousel-content h3 {
+
+        font-size: 27px;
+    }
+
+
+    .common-carousel-description {
+
+        font-size: 14px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .common-carousel-features {
+
+        gap: 18px;
+    }
+
+
+    .common-carousel-feature {
+
+        grid-template-columns:
+            38px 1fr;
+
+        gap: 12px;
+    }
+
+
+    .common-carousel-feature-icon {
+
+        width: 38px;
+        height: 38px;
+
+        border-radius: 11px;
+
+        font-size: 14px;
+    }
+
+
+    .common-carousel-feature h4 {
+
+        font-size: 14px;
+    }
+
+
+    .common-carousel-feature p {
+
+        font-size: 12.5px;
+    }
+
+
+    .common-carousel-arrow {
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 13px;
+    }
+
+
+    .common-carousel-pagination {
+
+        margin-top: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .common-carousel-section {
+
+        padding:
+            55px 12px;
+    }
+
+
+    .common-carousel-header h2 {
+
+        font-size: 27px;
+    }
+
+
+    .common-carousel-header p {
+
+        font-size: 14px;
+    }
+
+
+    .common-carousel-image {
+
+        height: 220px;
+
+        min-height: 220px;
+    }
+
+
+    .common-carousel-content {
+
+        padding:
+            27px 20px;
+    }
+
+
+    .common-carousel-content h3 {
+
+        font-size: 24px;
+    }
+
+
+    .common-carousel-arrow {
+
+        width: 36px;
+        height: 36px;
+    }
+
+}

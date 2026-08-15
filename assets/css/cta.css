@@ -1,0 +1,192 @@
+/*=====================================
+        GLOBAL CTA
+=====================================*/
+
+.global-cta{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:120px 0;
+
+    background:linear-gradient(
+        180deg,
+        #0d1728 0%,
+        #111d31 100%
+    );
+
+}
+
+.global-cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    top:-250px;
+
+    right:-250px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        circle,
+        rgba(79,214,255,.18),
+        transparent 70%
+    );
+
+    animation:ctaBlue 10s ease-in-out infinite alternate;
+
+}
+
+.global-cta::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    left:-220px;
+
+    bottom:-220px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        circle,
+        rgba(57,194,112,.15),
+        transparent 70%
+    );
+
+    animation:ctaGreen 12s ease-in-out infinite alternate;
+
+}
+
+.cta-box{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:70px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(16px);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.25);
+
+}
+
+.cta-box h2{
+
+    font-size:54px;
+
+    line-height:1.2;
+
+    color:#fff;
+
+    margin-bottom:25px;
+
+}
+
+.cta-box p{
+
+    color:#c6d4e5;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    max-width:700px;
+
+    margin:0 auto 40px;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-primary{
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    background:#39c270;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(57,194,112,.35);
+
+}
+
+@keyframes ctaBlue{
+
+    from{
+
+        transform:translate(0,0) scale(1);
+
+    }
+
+    to{
+
+        transform:translate(-40px,30px) scale(1.15);
+
+    }
+
+}
+
+@keyframes ctaGreen{
+
+    from{
+
+        transform:translate(0,0) scale(1);
+
+    }
+
+    to{
+
+        transform:translate(35px,-35px) scale(1.12);
+
+    }
+
+}

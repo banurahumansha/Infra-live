@@ -1,0 +1,1841 @@
+/*==================================================
+        CORPORATE FRAMEWORK V1
+        LAYOUT.CSS
+        Version-1
+==================================================*/
+
+.stat-box{
+    flex:1;
+    text-align:center;
+    padding:20px;
+}
+
+.stat-box h3{
+    font-size:3rem;      /* same as your counter */
+    font-weight:700;
+    color:#FFFF;       /* or your heading color */
+}
+
+.slash{
+    font-size:3rem;
+    font-weight:700;
+    color:#FFFF ;
+    line-height:1;
+    margin:0 4px;
+}
+
+.stat-box .counter{
+    font-size:3.5rem;
+    font-weight:700;
+    color:#FFFF ;
+    line-height:1;
+    margin-bottom:10px;
+}
+  .stat-box p{
+    color:#FFFF ;
+    font-size: 1.4rem;
+    margin:0;
+}
+
+
+
+/*==================================================
+        CONTAINER
+==================================================*/
+
+.container{
+    width:100%;
+    max-width:1320px;
+    margin:auto;
+    padding:0 60px;
+}
+
+section{
+    padding:100px 0;
+    border-bottom:1px solid #0f1010;
+}
+.hero{
+    min-height:100vh;
+}
+/* ==========================================================================
+   1. Base Section & Background Layering (Desktop & Mobile Unified)
+   ========================================================================== */
+.about {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 100vh !important; /* Locks section to full screen height */
+    padding: 80px 0 !important;
+    overflow: hidden !important;
+    z-index: 1 !important; /* Establishes a clean stacking context */
+    display: flex !important;
+    align-items: center !important;
+    background-color: #000;
+}
+
+/* Symmetrically Cropped Fullscreen Background Video */
+
+/* Semi-Transparent Overlay Layer for Text Readability */
+.about::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+}
+
+/* Foreground Text and Stats Panel */
+.about .container {
+    position: relative !important;
+    z-index: 2 !important; /* Elevates text safely over background overlays */
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+    box-sizing: border-box !important;
+}
+
+/* Desktop Stats Flexing */
+.about-stats {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 40px !important;
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+}
+.about-stats::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+        background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.10),
+        rgba(255,255,255,.18)
+    );
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    z-index:0;
+}
+
+.about-stats > *{
+    position:relative;
+    z-index:1;
+}
+/* ==========================================================================
+   2. Responsive Mobile Adjustments (Screens under 768px wide)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .about {
+        padding: 60px 0 !important;
+        height: auto !important; /* Allows vertical growth if text is long */
+        min-height: 100vh !important;
+    }
+
+    .about .container {
+        padding: 0 20px !important;
+        gap: 30px !important;
+    }
+
+
+
+    /* Arranges stats boxes side-by-side cleanly over the background video */
+    .about-stats {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+/* ==== checked */
+
+}
+/* ==========================================================================
+   Responsive Mobile Adjustments (Screens under 768px wide)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .about {
+        padding: 60px 0 !important;
+        height: auto !important;
+        min-height: 100vh !important;
+    }
+
+    .about .container {
+        padding: 0 20px !important;
+        gap: 35px !important;
+    }
+
+    /* Core typography configurations */
+    .section-title {
+        font-size: 1.6rem !important;
+        line-height: 1.3 !important;
+        color: #ffff !important;
+    }
+
+    .section-description {
+        display: block !important;
+        font-size: 1.1rem !important;
+        line-height: 1.5 !important;
+        color: #ffff !important;
+            font-weight: 400;
+
+
+    }
+
+    /*
+       1. Forces a strict 2x2 Grid Layout for your stat components
+    */
+    .about-stats {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* Exactly 2 uniform columns side-by-side */
+        gap: 16px !important; /* Uniform horizontal and vertical spacing gap matrix */
+        width: 100% !important;
+    }
+
+    /*
+       2. Stacks the Counter value on TOP and the Description label BELOW
+    */
+    .stat-box {
+        display: flex !important;
+        flex-direction: column !important; /* Vertically aligns inner children elements */
+        justify-content: center !important;
+        align-items: center !important; /* Centers text strings horizontally */
+        text-align: center !important;
+
+        background: rgba(255, 255, 255, 0.06) !important;
+        padding: 20px 12px !important; /* Generates top/bottom breathing space buffer inside cards */
+        border-radius: 8px !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        backdrop-filter: blur(4px) !important;
+    }
+
+    /*
+       3. Fixed Structural Typography Layout Rules
+    */
+    .stat-box h3.counter {
+        font-size: 1.75rem !important; /* Clean, bold fixed numeric font sizing */
+        font-weight: 700 !important;
+        color: #FFFF !important;
+        margin: 0 0 6px 0 !important; /* Adds a fixed separation spacing under the numbers */
+        line-height: 1.1 !important;
+    }
+
+    .stat-box p {
+        font-size: 0.85rem !important; /* Clean, locked label text font sizing */
+        font-weight: 500 !important;
+        color: #FFFF !important;
+        margin: 0 !important; /* Removes default browser margin box leakage */
+        line-height: 1.3 !important;
+    }
+
+     /* Standard size for normal, single-number counters (e.g., "100+", "50+") */
+    .stat-box h3.counter,
+    .stat-box h3 {
+        font-size: 1.75rem !important; /* Large and bold numbers */
+        font-weight: 700 !important;
+        margin: 0 0 6px 0 !important;
+    }
+
+    /* 1. SCALE DOWN ONLY THE 24/7 COUNTER NUMBERS */
+    .stat-box.wide-stat h3 {
+        font-size: 1rem !important; /* Reduced ONLY for the composite numbers to prevent line breaking */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 3px !important;
+    }
+
+    /* Styles the center divider symbol inside the h3 */
+    .stat-box.wide-stat h3 .slash {
+        font-size: 1 rem !important;
+        color: rgba(255, 255, 255, 0.4) !important;
+        font-weight: 400 !important;
+    }
+
+    /* 2. UNIFIED, FIXED LABEL SIZING (Remains identical on all boxes) */
+    .stat-box p {
+        font-size: 0.85rem !important; /* Stays at your clean default mobile scale */
+        font-weight: 500 !important;
+        color: #FFFF !important;
+        margin: 0 !important;
+        line-height: 1.3 !important;
+    }
+
+}
+
+
+
+/*==================================================
+        HERO
+==================================================*/
+
+/* ================= HERO ================= */
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  transform-origin: center;
+    object-fit: cover;
+
+}
+@media (max-width:768px){
+
+    .hero-video{
+    top: 0;
+    left: 0;
+
+        object-fit:fill;
+
+        background:#000;
+
+    }
+
+}
+/* Buttons */
+
+.hero-buttons{
+
+    position:absolute;
+
+    left:50%;
+
+    top:78%;
+
+    transform:translate(-50%,-50%);
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:10;
+
+}
+
+/* Secondary Button */
+
+.secondary-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 32px;
+
+    border:2px solid rgba(255,255,255,.8);
+
+    border-radius:50px;
+
+    color:#fff;
+
+    background:transparent;
+
+    font-weight:600;
+
+    transition:.35s ease;
+
+}
+
+.secondary-btn:hover{
+
+    background:#fff;
+
+    color:#0B5ED7;
+
+}
+
+@keyframes floatDown{
+
+    0%,100%{
+        transform:translate(-50%,0);
+    }
+
+    50%{
+        transform:translate(-50%,8px);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/*==========================
+CENTER CARD
+==========================*/
+
+.center-card{
+
+    position:absolute;
+
+    left:40%;
+
+    top:40%;
+
+    transform:translate(-50%,-50%);
+
+    width:130px;
+
+    height:130px;
+
+        background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius:7px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    box-shadow:0 30px 80px rgba(15,98,254,.30);
+
+    z-index:20;
+
+}
+
+.center-card h3{
+
+    margin:15px 0 8px;
+
+    font-size:32px;
+
+}
+
+.center-card p{
+
+    margin:0;
+
+    opacity:.9;
+
+}
+
+
+/*==========================
+CENTER ICON
+==========================*/
+
+.center-icon{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    padding:10px;
+    box-shadow: 0 0 25px rgba(15,98,254,.25);
+}
+
+.center-icon img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+
+/*==========================
+SERVICE CARDS
+==========================*/
+
+.service-card{
+
+    position:absolute;
+
+    width:180px;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(15px);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.service-card:hover{
+    transform: translateY(-12px) scale(1.06);
+    box-shadow: 0 30px 70px rgba(15,98,254,.18);
+}
+
+.service-card i{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:14px;
+
+    background:#EEF5FF;
+
+    color:#0F62FE;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+}
+
+.service-card span{
+
+    font-weight:600;
+
+    color:#0B1F33;
+
+}
+
+
+/*==========================
+POSITIONS
+==========================*/
+
+.cloud{
+
+    top:0;
+
+    left:190px;
+
+}
+
+.network{
+
+    left:10;
+
+    top:180px;
+
+}
+
+.security{
+
+    right:0;
+
+    top:180px;
+
+}
+
+.camera{
+
+    left:30px;
+
+    bottom:20px;
+
+}
+
+.storage{
+
+    right:30px;
+
+    bottom:20px;
+
+}
+
+
+/*==========================
+SVG CONNECTIONS
+==========================*/
+
+.service-card{
+    animation: floatCard 6s ease-in-out infinite;
+      cursor: pointer;
+}
+
+
+.about{
+    position:relative;
+    overflow:hidden;
+    background:#FFFFFF;
+        padding: 80px 0; /* Ensures inner content doesn't hit screen edges */
+  }
+
+/* =========================
+   VIDEO BACKGROUND
+========================= */
+
+.about-video{
+
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:60% center;
+
+    transform:scale(1.08);
+
+    filter:brightness(.68) contrast(1.05) saturate(1.05);
+
+    z-index:0;
+
+    animation:aboutZoom 20s ease-in-out infinite alternate;
+
+}
+
+
+
+
+.about-highlight{
+    margin-top:45px;
+}
+
+
+
+.about-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px 35px;
+}
+
+.about-item{
+    color:#0B0B45;
+    font-size:1.05rem;
+}
+
+.about-stats{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    margin-top:80px;
+    position:relative;
+    z-index:2;
+}
+
+
+/* =========================
+   OPTIONAL: make right box pop
+========================= */
+.about-box{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+
+.about-item{
+    padding:14px 0;
+    border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+.about-item:last-child{
+    border-bottom:none;
+}
+
+.primary-btn{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:14px 32px;
+
+    background:linear-gradient(135deg,#0B5ED7,#00C2FF);
+
+    color:#fff;
+    text-decoration:none;
+
+    font-weight:600;
+    font-size:1rem;
+
+    border-radius:50px;
+
+    box-shadow:0 10px 30px rgba(11,94,215,.35);
+
+    transition:all .35s ease;
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 18px 40px rgba(11,94,215,.45);
+
+    color:#fff;
+
+}
+
+.primary-btn i{
+
+    transition:.35s;
+
+}
+
+.primary-btn:hover i{
+
+    transform:translateX(6px);
+
+}
+.primary-btn--small{
+
+    padding:8px 18px;
+
+    font-size:0.85rem;
+
+    border-radius:40px;
+
+    box-shadow:0 6px 18px rgba(11,94,215,.25);
+
+}
+
+.primary-btn--small:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(11,94,215,.35);
+
+}
+
+.solutions{
+    position:relative;
+background: linear-gradient(135deg, #fce7f3 0%, #e0f2fe 60%, #ccfbf1 100%);
+    padding:100px 0;
+    overflow:hidden;
+}
+
+.solutions::before{
+    content:'';
+    position:absolute;
+    width:400px;
+    height:400px;
+    background:rgba(11,94,215,0.08);
+    top:-100px;
+    left:-100px;
+    filter:blur(80px);
+    border-radius:50%;
+}
+.solutions::after{
+    content:'';
+    position:absolute;
+    width:400px;
+    height:400px;
+    background:rgba(0,194,255,0.08);
+    bottom:-120px;
+    right:-120px;
+    filter:blur(90px);
+    border-radius:50%;
+}
+
+.solutions-title{
+
+    font-size:2.8rem;
+
+    font-weight:700;
+
+    color:#0B1F33;
+
+    margin-bottom:20px;
+
+}
+
+.solutions-subtitle{
+
+    max-width:700px;
+
+    color:#6B7280;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+}
+
+/* ===============================
+   LARGE TABLETS (992px - 1199px)
+================================= */
+@media (max-width:1199px){
+
+    .solutions-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:28px;
+    }
+
+    .solution-card{
+        min-height:300px;
+        padding:30px;
+    }
+
+    .card-content h3{
+        font-size:30px !important;
+    }
+
+}
+
+/* ===============================
+   TABLETS (768px - 991px)
+================================= */
+@media (max-width:991px){
+
+    .solutions-grid{
+        grid-template-columns:1fr !important;
+        gap:24px;
+    }
+
+    .solution-card{
+        padding:28px;
+        min-height:280px;
+    }
+
+    .solution-icon{
+        width:68px;
+        top:22px;
+        right:22px;
+    }
+
+    .solution-card i{
+        font-size:38px;
+        margin-bottom:20px;
+    }
+
+    .solution-card h3{
+        font-size:30px !important;
+        line-height:1.15;
+        max-width:100%;
+        margin-bottom:16px;
+    }
+
+    .solution-card p{
+        font-size:16px;
+        line-height:1.7;
+    }
+
+}
+
+/* ===============================
+   MOBILE (481px - 767px)
+================================= */
+@media (max-width:767px){
+
+    .solutions-grid{
+        grid-template-columns:1fr !important;
+        gap:20px;
+    }
+
+    .solution-card{
+        padding:24px;
+        min-height:260px;
+    }
+
+    .solution-icon{
+        width:60px;
+        top:20px;
+        right:20px;
+    }
+
+    .solution-card i{
+        font-size:34px;
+        margin-bottom:18px;
+    }
+
+    .solution-card h3{
+        font-size:28px !important;
+        line-height:1.15;
+        letter-spacing:.4px;
+        max-width:100%;
+        margin-bottom:16px;
+    }
+
+    .solution-card p{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+}
+
+/* ===============================
+   SMALL MOBILE (480px and below)
+================================= */
+@media (max-width:480px){
+
+    .solutions-grid{
+        gap:16px;
+    }
+
+    .solution-card{
+        padding:20px;
+        min-height:auto;
+        border-radius:18px;
+    }
+
+    .solution-icon{
+        width:50px;
+        top:18px;
+        right:18px;
+    }
+
+    .solution-card i{
+        font-size:28px;
+        margin-bottom:16px;
+    }
+
+    .solution-card h3{
+        font-size:24px !important;
+        line-height:1.2;
+        margin-bottom:14px;
+    }
+
+    .solution-card p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .card-btn{
+        padding:10px 18px;
+        font-size:13px;
+    }
+
+}
+.solutions-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+.solution-card{
+        background:#fff;
+    border-top:5px solid var(--accent-color);
+
+    position:relative;
+    padding:60px 40px;
+      min-height:450px;
+    border-radius:18px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    transition: all 0.4s ease;
+    overflow:hidden;
+
+}
+.solution-card img{
+
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s;
+ z-index:1;
+}
+.solution-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        135deg,
+        rgba(11,94,215,.08),
+        transparent 60%
+    );
+      transition:.5s;
+    pointer-events:none;
+}
+.solution-card:hover{
+
+        transform: translateY(-8px) scale(1.02);
+
+
+    box-shadow:0 20px 45px rgba(11,94,215,.15);
+
+}
+.solution-card:hover .desc,
+.solution-card:hover .card-btn{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+.card-content{
+
+    position:absolute;
+    inset:0;
+
+    padding:35px;
+
+    display:flex;
+    flex-direction:column;
+
+    z-index:2;
+
+}
+.solution-icon{
+
+    position:absolute;
+
+    top:25px;
+
+    right:25px;
+
+    width:90px;
+
+
+}
+
+.solution-card i{
+
+    font-size:48px;
+
+    color:#0B5ED7;
+
+    margin-bottom:25px;
+
+}
+
+
+.solution-card h3{
+
+    color:#fff;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    line-height:1.05;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    max-width:260px;
+
+    margin-bottom:auto;
+
+    transition:.4s;
+
+}
+.solution-card p{
+
+    color:#64748B;
+
+    line-height:1.7;
+
+}
+
+.solution-card .desc,
+.solution-card .learn-more{
+
+    opacity:0;
+    transform:translateY(10px);
+    transition:0.3s ease;
+
+}
+.solution-bg{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    width:90px;
+
+    opacity:.08;
+
+    pointer-events:none;
+
+}
+
+.solution-card .card-btn{
+    display:inline-flex;
+    align-self:center;   /* Center only this button */
+    justify-content:center;
+
+    opacity:0;
+    transform:translateY(10px);
+
+    pointer-events:none;
+
+    transition:0.35s ease;
+        margin-top:12px;
+font-size: 1.2rem;
+    align-items: center;
+}
+.solution-card:hover .desc,
+.solution-card:hover .card-btn{
+
+    opacity:1;
+    transform:translateY(0);
+
+    pointer-events:auto;
+
+}
+.solution-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 60px rgba(11,94,215,0.15);
+}
+.solution-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.solution-card:hover h3{
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+/* Card 1 - Blue */
+.solution-card:nth-child(5):hover {
+    background: linear-gradient(
+        135deg,
+        #DDFBF7 0%,
+        #0F766E 100%
+    );
+
+    box-shadow:
+        0 25px 60px rgba(15,118,110,.30),
+        0 0 30px rgba(15,118,110,.20);
+}
+
+/* Card 1 - Deep Green */
+.solution-card:nth-child(1):hover {
+    background: linear-gradient(
+        135deg,
+        #166534 0%,
+        #22C55E 100%
+    );
+    box-shadow:
+        0 25px 60px rgba(34,197,94,.35),
+        0 0 30px rgba(34,197,94,.25);
+}
+
+/* Card 2 - Deep Pink / Purple */
+.solution-card:nth-child(2):hover {
+    background: linear-gradient(
+        135deg,
+        #9D174D 0%,
+        #DB2777 45%,
+        #7E22CE 100%
+    );
+    box-shadow:
+        0 25px 60px rgba(219,39,119,.35),
+        0 0 30px rgba(126,34,206,.25);
+}
+
+/* Card 3 - Deep Purple */
+.solution-card:nth-child(3):hover {
+    background: linear-gradient(
+        135deg,
+        #5B21B6 0%,
+        #9333EA 55%,
+        #EC4899 100%
+    );
+
+    box-shadow:
+        0 25px 60px rgba(147,51,234,.35),
+        0 0 30px rgba(236,72,153,.25);
+}
+/* Card 4 - Deep Rose */
+.solution-card:nth-child(4):hover {
+    background: linear-gradient(
+        135deg,
+        #9F1239 0%,
+        #E11D48 100%
+    );
+    box-shadow:
+        0 25px 60px rgba(225,29,72,.35),
+        0 0 30px rgba(225,29,72,.25);
+}
+
+/* Card 5 - Deep Ocean Teal */
+.solution-card:nth-child(5):hover {
+    background: linear-gradient(
+        135deg,
+        #172547 0%,
+        #0F5E73 55%,
+        #1A7D8E 100%
+    );
+
+    box-shadow:
+        0 25px 60px rgba(15,94,115,.35),
+        0 0 30px rgba(26,125,142,.25);
+}
+
+/* Card 6 - Deep Cyan / Teal */
+.solution-card:nth-child(6):hover {
+    background: linear-gradient(
+        135deg,
+        #155E75 0%,
+        #0891B2 100%
+    );
+    box-shadow:
+        0 25px 60px rgba(8,145,178,.35),
+        0 0 30px rgba(8,145,178,.25);
+}
+.solution-card:hover .card-image{
+
+    opacity:0;
+
+    transform:scale(1.1);
+
+}
+.solution-card:hover,
+.solution-card:hover h3,
+.solution-card:hover p,
+.solution-card:hover i,
+.solution-card:hover svg{
+    color:#fff;
+    fill:#fff;
+}
+
+
+/*==========================================
+INDUSTRIES TIMELINE
+==========================================*/
+
+.industry-timeline-section {
+    padding: 110px 0;
+background: linear-gradient(
+    135deg,
+    #C9DBFF,
+    #AFCFFF,
+    #8CCBEF,
+    #7ECFC3,
+    #69B89D
+);
+}
+
+.industry-timeline{
+
+    margin-top:70px;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+.industry-line{
+
+    position:absolute;
+
+    top:42px;
+
+    left:8%;
+
+    right:8%;
+
+    height:4px;
+
+    background:#DCE8F8;
+
+    z-index:1;
+
+}
+
+.industry-node{
+
+    width:16%;
+
+    position:relative;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    z-index:2;
+
+}
+
+.industry-icon{
+
+    width:85px;
+
+    height:85px;
+
+    margin:auto;
+
+    background:#fff;
+
+    border:4px solid #0B5ED7;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.35s;
+
+}
+
+.industry-icon img{
+
+    width:42px;
+
+    height:42px;
+
+}
+
+.industry-node h5{
+
+    margin-top:22px;
+
+    color:#5F6B7A;
+
+    font-weight:700;
+
+}
+
+.industry-node p{
+
+    margin-top:10px;
+
+    color:#4F5F73;
+
+    font-size: 1.2rem;
+
+    line-height:1.6;
+        font-weight:550;
+
+
+}
+
+.industry-node:hover .industry-icon{
+
+    background:#0B5ED7;
+
+    transform:translateY(-10px) scale(1.08);
+
+}
+
+.industry-node:hover h5{
+
+    color:#0B5ED7;
+
+}
+.industry-node:hover p{
+
+    color:#0B5ED7;
+
+}
+.industry-node:hover{
+
+    text-decoration:none;
+
+}
+
+
+/*==========================================
+TABLET & MOBILE
+==========================================*/
+
+@media (max-width:991px){
+
+    .industry-timeline{
+
+        display:block;
+
+        position:relative;
+
+        margin-top:60px;
+
+        padding-left:60px;
+
+    }
+
+    .industry-line{
+
+        left:38px;
+
+        right:auto;
+
+        top:0;
+
+        bottom:0;
+
+        width:4px;
+
+        height:100%;
+
+    }
+
+    .industry-node{
+
+        width:100%;
+
+        display:flex;
+
+        align-items:flex-start;
+
+        text-align:left;
+
+        margin-bottom:45px;
+
+        position:relative;
+
+    }
+
+    .industry-icon{
+
+        width:75px;
+
+        height:75px;
+
+        margin:0;
+
+        margin-left:-60px;
+
+        flex-shrink:0;
+
+    }
+
+    .industry-icon img{
+
+        width:36px;
+
+        height:36px;
+
+    }
+
+    .industry-node h5{
+
+        margin:0 0 8px 25px;
+
+    }
+
+    .industry-node p{
+
+        margin:0 0 0 25px;
+
+        font-size:.9rem;
+
+    }
+
+}
+
+
+/*==========================================
+MOBILE
+==========================================*/
+
+@media (max-width:576px){
+
+    .industry-timeline-section{
+
+        padding:80px 0;
+
+    }
+
+    .industry-timeline{
+
+        padding-left:50px;
+
+    }
+
+    .industry-line{
+
+        left:30px;
+
+    }
+
+    .industry-icon{
+
+        width:65px;
+
+        height:65px;
+
+        margin-left:-50px;
+
+        border-width:3px;
+
+    }
+
+    .industry-icon img{
+
+        width:30px;
+
+        height:30px;
+
+    }
+
+    .industry-node{
+
+        margin-bottom:35px;
+
+    }
+
+    .industry-node h5{
+
+        font-size:1rem;
+
+    }
+
+    .industry-node p{
+
+        font-size:.85rem;
+
+        line-height:1.5;
+
+    }
+
+}
+
+.client-logo-section{
+
+    padding:90px 0;
+
+    overflow:hidden;
+background: linear-gradient(
+    135deg,
+    rgba(234,243,255,0.9),
+    rgba(228,247,255,0.9),
+    rgba(232,255,240,0.9),
+    rgba(255,248,230,0.9),
+    rgba(255,234,243,0.9)
+);
+}
+
+.client-logo-marquee{
+
+    overflow:hidden;
+    width:100%;
+    margin:30px 0;
+
+}
+
+.client-logo-track{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:70px;
+
+    width:fit-content;
+
+    animation:clientScroll 120s linear infinite;
+
+}
+
+.client-logo-marquee.reverse .client-logo-track{
+
+    animation:clientScrollReverse 120s linear infinite;
+
+}
+.client-logo-track img{
+
+    height:60px;
+
+    width:auto;
+
+    max-width:150px;
+
+    object-fit:contain;
+
+}
+
+.client-logo-track img:hover{
+
+    opacity:1;
+
+    filter:none;
+
+    transform:scale(1.05);
+
+}
+
+@keyframes clientScroll{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+@keyframes clientScrollReverse{
+
+    from{
+
+        transform:translateX(-50%);
+
+    }
+
+    to{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 40px 16px; /* Adds breathing room on tiny screens */
+    }
+
+    .about .container {
+        flex-direction: column; /* Stacks stats below or above content */
+        align-items: stretch;
+        gap: 30px;
+    }
+
+
+
+    /* Converts vertical sidebar stats into a side-by-side grid */
+    .about-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 15px;
+        width: 100%;
+    }
+
+}
+
+/* ==========================================================================
+   1. Register the numeric properties in the browser memory cache layer
+   ========================================================================== */
+@property --count24 {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+}
+
+@property --count7 {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+}
+
+/* ==========================================================================
+   2. Desktop Core Structural Styles for the CSS Counter Box
+   ========================================================================== */
+.css-247-display {
+    /* Directs both timer properties to count up over 2 seconds */
+    animation: trigger24 2s cubic-bezier(0.1, 1, 0.1, 1) forwards,
+               trigger7 2s cubic-bezier(0.1, 1, 0.1, 1) forwards;
+
+    /* Prepares custom internal variables inside the CSS layout tree */
+    counter-reset: val24 var(--count24) val7 var(--count7);
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.75rem; /* Matches your other large desktop counters */
+    font-weight: 700;
+    color: #293b97;
+    margin: 0 0 6px 0;
+}
+
+/* Injecting the layout values dynamically with an un-wipeable custom slash separator */
+.css-247-display::after {
+    content: counter(val24) " / " counter(val7);
+}
+
+/* Timeline Keyframes mapping up to your target values */
+@keyframes trigger24 {
+    to { --count24: 24; }
+}
+@keyframes trigger7 {
+    to { --count7: 7; }
+}
+
+
+/* ==========================================================================
+   3. Mobile Responsive Scale Down Fix (Screens under 768px wide)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Targets only this wide box text scale layer on mobile grid views */
+    .css-247-display {
+        font-size: 1.35rem !important; /* Lowers numbers footprint strictly */
+        font-weight: 700 !important;
+        letter-spacing: -0.5px !important;
+        margin: 0 0 6px 0 !important;
+    }
+}
+
+.about-content {
+    /* video overlay background: rgba(15, 23, 42, 0.85); Deep navy/charcoal with transparency
+        background: rgba(255, 255, 255, 0.45); /* White tint with transparency
+background: rgba(55, 48, 163, 0.55); */
+
+        background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.10),
+        rgba(255,255,255,.18)
+    );
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+backdrop-filter: blur(12px);    padding: 40px;
+    border-radius: 14px;
+    max-width: 650px;
+}
+
+/* Invert your text colors to white so they pop on the dark background */
+.section-title {
+    color: #ffffff;
+}
+
+.section-description {
+    color: #e2e8f0;
+        font-weight:500;
+
+font-size: 24px;
+    text-shadow:
+        0 2px 10px rgba(0,0,0,.28);
+}
+
+.about-highlight h3, .about-item {
+    color: #ffffff;
+}
+
+
+/*==========================================
+PARTNERS
+==========================================*/
+
+.partners{
+    position:relative;
+    overflow:hidden;
+    width:100%;
+    
+}
+
+.partners-slider{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    margin-bottom:75px;
+    line-height:0;
+}
+
+.partners-slider:last-child{
+    margin-bottom:0;
+}
+
+.partners-track{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    flex-wrap:nowrap;
+    width:fit-content;
+    min-width:max-content;
+    will-change:transform;
+}
+
+.partner{
+    flex:0 0 auto;
+    width:180px;
+    height:90px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    padding:10px 20px;
+}
+
+.partner img{
+    display:block;
+    width:100%;
+    height:100%;
+    max-width:100%;
+    object-fit:contain;
+}
+
+.partners-slider.left .partners-track{
+    animation:moveLeft 60s linear infinite;
+}
+
+.partners-slider.right .partners-track{
+    animation:moveRight 60s linear infinite;
+}
+
+@keyframes moveLeft{
+    from{
+        transform:translate3d(0,0,0);
+    }
+    to{
+        transform:translate3d(-50%,0,0);
+    }
+}
+
+@keyframes moveRight{
+    from{
+        transform:translate3d(-50%,0,0);
+    }
+    to{
+        transform:translate3d(0,0,0);
+    }
+}
+

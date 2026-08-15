@@ -1,0 +1,232 @@
+/*=========================
+      HERO SECTION
+=========================*/
+
+.solution-hero{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero-bg{
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    animation:heroZoom 20s ease-in-out infinite alternate;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(5,18,45,.90) 0%,
+        rgba(5,18,45,.70) 45%,
+        rgba(5,18,45,.25) 100%
+    );
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    max-width:700px;
+
+    color:#fff;
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    color:#4DA3FF;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    animation:fadeUp .8s ease;
+}
+
+.hero-content h1{
+
+    font-size:68px;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+    animation:fadeUp 1s ease;
+}
+
+.hero-content p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:#EAEAEA;
+
+    margin-bottom:40px;
+
+    max-width:600px;
+
+    animation:fadeUp 1.2s ease;
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    animation:fadeUp 1.4s ease;
+}
+
+.btn-primary{
+
+    background:#0057D9;
+
+    color:#fff;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    transition:.35s;
+}
+
+.btn-primary:hover{
+
+    background:#0044aa;
+
+    transform:translateY(-4px);
+}
+
+.btn-outline{
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    transition:.35s;
+}
+
+.btn-outline:hover{
+
+    background:#fff;
+
+    color:#003366;
+}
+
+.scroll-indicator{
+
+    position:absolute;
+
+    bottom:40px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:2;
+}
+
+.scroll-indicator span{
+
+    display:block;
+
+    width:2px;
+
+    height:45px;
+
+    background:#fff;
+
+    animation:scrollMove 1.6s infinite;
+}
+
+/*=========================
+      ANIMATIONS
+=========================*/
+
+@keyframes heroZoom{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.08);
+    }
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+@keyframes scrollMove{
+
+    0%{
+
+        opacity:0;
+
+        transform:translateY(0);
+    }
+
+    50%{
+
+        opacity:1;
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translateY(18px);
+    }
+}

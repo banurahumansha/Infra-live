@@ -1,0 +1,79 @@
+/* ============================================
+   CORPORATE FRAMEWORK V1
+   Theme Variables
+============================================ */
+
+:root {
+
+    /* ========= Brand Colors ========= */
+
+    --primary: #0B5ED7;
+    --primary-dark: #084298;
+    --secondary: #0F172A;
+    --accent: #00C2FF;
+
+    /* ========= Background ========= */
+
+    --bg-light: #F8FAFC;
+    --bg-white: #FFFFFF;
+    --bg-dark: #111827;
+
+    /* ========= Text ========= */
+
+    --text-dark: #1E293B;
+    --text-light: #64748B;
+    --text-white: #FFFFFF;
+
+    /* ========= Border ========= */
+
+    --border-color: #E5E7EB;
+
+    /* ========= Fonts ========= */
+
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Inter', sans-serif;
+
+    /* ========= Font Sizes ========= */
+
+    --fs-h1: 3.5rem;
+    --fs-h2: 2.6rem;
+    --fs-h3: 2rem;
+    --fs-h4: 1.5rem;
+
+    --fs-body: 1rem;
+    --fs-small: 0.9rem;
+
+    /* ========= Font Weight ========= */
+
+    --fw-light:300;
+    --fw-normal:400;
+    --fw-medium:500;
+    --fw-semibold:600;
+    --fw-bold:700;
+
+    /* ========= Layout ========= */
+
+    --container-width:1320px;
+
+    --section-padding:100px;
+
+    /* ========= Radius ========= */
+
+    --radius-sm:8px;
+    --radius-md:16px;
+    --radius-lg:24px;
+    --radius-xl:40px;
+
+    /* ========= Shadow ========= */
+
+    --shadow-sm:0 2px 8px rgba(0,0,0,.05);
+
+    --shadow-md:0 8px 30px rgba(0,0,0,.08);
+
+    --shadow-lg:0 20px 60px rgba(0,0,0,.12);
+
+    /* ========= Transition ========= */
+
+    --transition:0.35s ease;
+
+}

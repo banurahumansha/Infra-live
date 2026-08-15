@@ -1,0 +1,978 @@
+.cs-inner{
+
+    width:100%;
+
+    max-width:1800px;
+
+    margin:0 auto;
+
+    padding:0 40px;
+
+}
+.cs-hero .container{
+   width:min(97%, 1600px);
+    flex :1;
+    max-width:1600px;
+
+    margin:0 auto;
+
+    padding:0;
+    position:relative;
+
+    z-index:2;
+    align-items: center;
+
+}
+/**++++++++++++++++++++ CTA ++++++++++**********/
+body.page-cs{
+
+    --cta-primary:#111827;
+    --cta-secondary:#231ca6;
+    --cta-text:#ffffff;
+
+  }
+body.page-cs{
+
+    background:
+        radial-gradient(circle at 10% 15%, rgba(124,77,255,.16), transparent 35%),
+        radial-gradient(circle at 90% 25%, rgba(0,229,255,.08), transparent 30%),
+        radial-gradient(circle at 50% 100%, rgba(139,92,246,.10), transparent 40%),
+        linear-gradient(180deg,#0a081d 0%, #11152d 50%, #08111f 100%);
+
+    color:#fff;
+}
+body.page-cs .cta-box{
+    margin-top: 70px;
+    background: linear-gradient(
+        135deg,
+        #131924,
+        #5c6bc0
+    );
+
+    color:#ffffff;
+
+}
+
+/*==================================================
+            MS Hero
+==================================================*/
+.cs-hero {  
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 92vh;
+    overflow: hidden;
+     background-image:
+        url("../images/hero/cyber1.webp");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+.cs-hero .container{
+   width:min(97%, 1600px);
+    flex :1;
+    max-width:1600px;
+
+    margin:0 auto;
+
+    padding:0;
+    position:relative;
+
+    z-index:2;
+    align-items: center;
+
+}
+.cs-hero-content{
+   width: 100%;
+       text-align: right;
+
+}
+.cs-introduction{
+        padding:70px 0;
+    }
+.cs-hero h1 {
+    font-size: clamp(110px, 8vw, 120px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 28px;
+    text-align: left;
+    margin-top :120px;
+    background: linear-gradient(86.95deg, #3aa5cf 27.39%, #FFEC6F 70.68%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    opacity: 0;
+    transform: translateY(50px);
+    animation: heroFadeUp .8s ease forwards;
+}
+.cs-highlight {
+    display: inline-block;
+    align-items: left;
+    margin-top: 35px;
+    padding: 10px 10px 10px 12px; /* Added right and vertical padding */
+    border-left: 5px solid #FF9900;
+    width: 1100px;              /* change this */
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+ margin-left: 120px;
+    /* Frosted glass/Glossy background properties */
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.37);
+    white-space: nowrap;
+
+    /* Animation styling stays the same */
+    opacity: 0;
+    transform: translateY(40px);
+    animation: heroFadeUp .8s ease forwards;
+    animation-delay: .4s;
+
+}
+.cs-highlight span.accent {
+    color: #FF9900;
+}
+.cs-highlight .logo1 {
+    color: #2563eb; /* Sapphire blue */
+}
+
+@keyframes heroFadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 991px) {
+
+    .cs-highlight {
+        width: calc(100% - 60px);
+
+        margin-left: 30px;
+        margin-right: 30px;
+
+        font-size: 30px;
+        line-height: 1.35;
+
+        white-space: normal;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .cs-highlight {
+        width: calc(100% - 40px);
+
+        margin-left: 20px;
+        margin-right: 20px;
+
+        margin-top: 25px;
+
+        padding: 8px 12px;
+
+        border-left-width: 4px;
+
+        font-size: 24px;
+        line-height: 1.35;
+
+        white-space: normal;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .cs-highlight {
+        width: calc(100% - 30px);
+
+        margin-left: 15px;
+        margin-right: 15px;
+
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+}
+/*==================================================
+                Large Tablet
+==================================================*/
+
+@media (max-width:1200px){
+
+    .cs-hero{
+
+        min-height:85vh;
+
+        background-position:center;
+
+    }
+
+    .cs-hero .container{
+
+        width:95%;
+
+    }
+
+    .cs-hero h1{
+
+        font-size:clamp(72px,8vw,90px);
+
+        margin-bottom:20px;
+
+    }
+
+    .cs-hero p{
+
+        font-size:24px;
+
+        line-height:1.7;
+
+        max-width:700px;
+
+        margin-left:auto;
+
+    }
+
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 991px) {
+
+    .cs-hero-tagline {
+        padding-top: 200px;
+        white-space: normal;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .cs-hero-tagline p {
+        margin-left: 0;
+
+        max-width: 850px;
+
+        font-size: clamp(22px, 3vw, 26px);
+    }
+    .cs-hero h1{
+
+        font-size:clamp(50px,9vw,72px);
+
+        line-height:1.15;
+
+        margin-bottom:18px;
+
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .cs-hero-tagline {
+        padding-top: 160px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        white-space: normal;
+    }
+
+    .cs-hero-tagline p {
+        margin-left: 0;
+
+        max-width: 100%;
+
+        font-size: 21px;
+        line-height: 1.45;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .cs-hero-tagline {
+        padding-top: 130px;
+    }
+
+    .cs-hero-tagline p {
+        font-size: 19px;
+        line-height: 1.4;
+    }
+
+}
+/*==================================================
+                Tablet
+==================================================*/
+
+@media (max-width:991px){
+
+    .ms-hero{
+
+        min-height:80vh;
+
+        background-position:center;
+
+        padding:120px 0 80px;
+
+    }
+
+    .ms-hero .container{
+
+        width:92%;
+
+    }
+
+    .ms-hero-content{
+
+        text-align:center;
+
+    }
+
+    .ms-hero h1{
+
+        font-size:clamp(54px,9vw,72px);
+
+        line-height:1.15;
+
+        margin-bottom:18px;
+
+    }
+
+    .ms-hero p{
+
+        font-size:20px;
+
+        line-height:1.6;
+
+        max-width:650px;
+
+        margin:0 auto;
+
+    }
+
+}
+
+/*==================================================
+                Header
+==================================================*/
+
+.cs-section-header{
+
+
+    margin-bottom:70px;
+
+}
+
+.cs-intro-image{
+    padding: clamp(10px, 2vw, 18px);
+    border-radius:28px;
+}
+
+.cs-intro-image img{
+    width:100%;
+    display:block;
+    border-radius:18px;
+    height: 720px;
+}
+
+@media (max-width:768px){
+    .cs-section-header{
+        text-align:center;
+    }
+
+    .cs-introduction{
+        padding:50px 0;
+    }
+}
+
+/* =========================================
+   SECTION LABEL
+========================================= */
+
+.cs-section-tag{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:10px 18px;
+
+    margin-bottom:24px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(92,107,192,.20);
+
+    backdrop-filter:blur(12px);
+
+    color:#3842fa;
+
+    font-size:38px;
+    font-weight:700;
+
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+}
+.cs-section-tag i{
+    color:#6280e9;
+    font-size:36px;
+  
+}
+
+.cs-section-header{
+    max-width:100%;
+}
+.cs-section-header h2{
+
+    font-size:clamp(2rem,4vw,2.4rem);
+
+    line-height:1.15;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+    margin-bottom:24px;
+}
+
+.cs-section-header h2 span{
+
+    background:linear-gradient(
+        90deg,
+        #7c3aed,
+        #14b8a6
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+.cs-section-header p{
+
+    font-size:  28px;
+
+
+    color:#c7d2e4;
+
+}
+
+/* ===============================
+   TABLET
+================================= */
+
+@media (max-width: 991px) {
+
+    .cs-section-header h2 {
+
+        font-size: 2.5rem;
+
+        line-height: 1.2;
+
+        margin-bottom: 20px;
+    }
+
+}
+
+
+/* ===============================
+   MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+    .cs-section-header h2 {
+
+        font-size: 2rem;
+
+        line-height: 1.25;
+
+        margin-bottom: 18px;
+
+        text-align: center;
+    }
+
+}
+
+
+/* ===============================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+    .cs-section-header h2 {
+
+        font-size: 1.7rem;
+
+        line-height: 1.3;
+
+        margin-bottom: 16px;
+    }
+
+}
+@media (max-width: 991px) {
+
+    .cs-section-tag {
+
+        padding: 8px 16px;
+
+        margin-bottom: 20px;
+
+        gap: 8px;
+
+        font-size: 24px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .cs-section-tag::before {
+
+        font-size: 9px;
+
+    }
+
+}
+
+
+/* ===============================
+   MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+    .cs-section-tag {
+
+        padding: 8px 14px;
+
+        margin-bottom: 18px;
+
+        gap: 8px;
+
+        font-size: 18px;
+
+        letter-spacing: 1px;
+
+        text-align: center;
+
+        white-space: normal;
+    }
+
+    .cs-section-tag::before {
+
+        font-size: 8px;
+
+    }
+
+}
+
+
+/* ===============================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+    .cs-section-tag {
+
+        font-size: 16px;
+
+        padding: 7px 12px;
+
+        letter-spacing: .8px;
+    }
+
+}
+
+/*==========================
+Security Philosophy
+==========================*/
+
+.security-philosophy{
+
+    padding:70px 0;
+}
+
+.security-philosophy .container{
+
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+    color:#6ea8ff;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:20px;
+
+}
+
+
+.section-desc{
+
+    color:#9ca7bc;
+    font-size:18px;
+    line-height:1.8;
+    max-width:760px;
+    margin-top:25px;
+    margin-bottom:70px;
+
+}
+
+/* Grid */
+
+.philosophy-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+
+}
+
+/* Card */
+
+.philosophy-card{
+
+    position:relative;
+
+    background:#111827;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.45s;
+
+    min-height:310px;
+
+}
+
+/* Animated Corner */
+
+.corner{
+
+    position:absolute;
+
+    transition:.4s;
+
+}
+
+.corner.tl{
+
+    top:20px;
+    left:20px;
+
+    width:65px;
+    height:65px;
+
+    border-top:3px solid #00e5ff;
+    border-left:3px solid #00e5ff;
+
+    animation:cornerGlow 3s linear infinite;
+
+}
+
+.corner.br{
+
+    bottom:20px;
+    right:20px;
+
+    width:65px;
+    height:65px;
+
+    border-bottom:3px solid #00e5ff;
+    border-right:3px solid #00e5ff;
+
+    animation:cornerGlow 3s linear infinite reverse;
+
+}
+
+@keyframes cornerGlow{
+
+    0%{
+
+        border-color:#00e5ff;
+
+    }
+
+    35%{
+
+        border-color:#7c4dff;
+
+    }
+
+    70%{
+
+        border-color:#00e676;
+
+    }
+
+    100%{
+
+        border-color:#00e5ff;
+
+    }
+
+}
+
+/* Hover */
+
+.philosophy-card:hover{
+
+    background:#fff;
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+.philosophy-card:hover h3{
+
+    color:#08142f;
+
+}
+
+.philosophy-card:hover p{
+
+    color:#44516c;
+
+}
+
+.philosophy-card:hover .icon{
+
+    color:#08142f;
+
+}
+
+/* Icon */
+
+.icon{
+
+    font-size:42px;
+
+    color:#00e5ff;
+
+    margin-bottom:30px;
+
+    transition:.4s;
+
+}
+
+.philosophy-card h3{
+
+    color:#fff;
+
+    font-size:32px;
+
+    margin-bottom:18px;
+
+    transition:.4s;
+
+}
+
+.philosophy-card p{
+
+    color:#9aa6bb;
+
+    line-height:1.8;
+
+    font-size:26px;
+
+    transition:.4s;
+
+}
+
+/* Hover Corner */
+
+.philosophy-card:hover .corner.tl{
+
+    width:120px;
+
+}
+
+.philosophy-card:hover .corner.br{
+
+    width:120px;
+
+}
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.security-philosophy{
+
+    padding:90px 0;
+
+}
+
+.security-philosophy h2{
+
+    font-size:42px;
+
+}
+
+.philosophy-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.security-philosophy{
+
+    padding:70px 0;
+
+}
+
+.security-philosophy h2{
+
+    font-size:34px;
+
+}
+
+.section-desc{
+
+    font-size:16px;
+
+    margin-bottom:50px;
+
+}
+
+.philosophy-card{
+
+    padding:35px 28px;
+
+    min-height:auto;
+
+}
+
+.philosophy-card h3{
+
+    font-size:22px;
+
+}
+
+.icon{
+
+    font-size:34px;
+
+}
+
+}
+
+
+.common-carousel-slide:nth-child(1) .common-carousel-image img{
+      object-fit: cover;
+    object-position: 40% 26%;
+}
+
+.common-carousel-slide:nth-child(2) .common-carousel-image img{
+    object-position: 20% center;
+}
+
+.common-carousel-slide:nth-child(3) .common-carousel-image img{
+          object-fit: cover;
+    object-position: 70% 26%;
+
+}
+
+.common-carousel-slide:nth-child(4) .common-carousel-image img{
+  object-position:  40% 26%;
+
+}
+.common-carousel-image::after{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7,10,20,.10) 0%,
+            rgba(14,18,42,.28) 35%,
+            rgba(10,18,40,.68) 70%,
+            rgba(7,16,31,.88) 100%
+        );
+
+    pointer-events:none;
+
+}
+
+.common-carousel-slide.active .common-carousel-image img{
+
+    transform:scale(1.08);
+
+    filter:
+        brightness(.92)
+        contrast(1.12)
+        saturate(1.12);
+
+}
+
+.cyber-capabilities .feature-grid{
+
+      grid-template-columns:repeat(2, 1fr);
+    max-width:1400px;
+    margin:0 auto;
+
+
+}

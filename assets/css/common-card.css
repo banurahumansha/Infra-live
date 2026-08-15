@@ -1,0 +1,296 @@
+/*==================================================
+                FEATURE CARD COMPONENT
+==================================================*/
+
+/* Grid */
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+    padding: 40px;
+}
+
+
+/* Card */
+
+.feature-card{
+
+    position:relative;
+
+    height:600px;
+    overflow:hidden;
+
+    border-radius:28px;
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    cursor:pointer;
+
+    transition:all .45s ease;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.35);
+
+}
+
+
+/* Dark Overlay */
+
+.feature-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        to top,
+
+        rgba(5,10,20,.90),
+
+        rgba(5,10,20,.15)
+
+    );
+
+    transition:.45s ease;
+
+}
+
+
+/*==================================================
+                FRONT
+==================================================*/
+
+.feature-front{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    padding:40px;
+
+    z-index:2;
+
+    transition:.45s ease;
+
+}
+
+.feature-front h3{
+
+    color:#ffffff;
+
+    font-size:33px;
+
+    font-weight:700;
+
+    text-align:center;
+
+    line-height:1.3;
+
+    margin:0;
+  text-transform: uppercase;
+
+}
+
+
+/*==================================================
+                BACK
+==================================================*/
+
+.feature-back{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:40px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(37,99,235,.96),
+
+        rgba(92,107,192,.96),
+
+        rgba(20,184,166,.96)
+
+    );
+
+    color:#ffffff;
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:.45s ease;
+
+    z-index:3;
+
+}
+
+.feature-back h3{
+
+    font-size:33px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.feature-back p{
+
+    font-size:23px;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+    color:rgba(255,255,255,.92);
+
+}
+
+.feature-back ul{
+
+    margin:0;
+
+    padding-left:20px;
+
+}
+
+.feature-back li{
+
+    margin-bottom:22px;
+
+    line-height:1.6;
+
+    color:rgba(255,255,255,.92);
+    font-size:24px;
+
+}
+
+
+/*==================================================
+                HOVER
+==================================================*/
+
+.feature-card:hover .feature-overlay{
+
+    opacity:0;
+
+}
+
+.feature-card:hover .feature-front{
+
+    opacity:0;
+
+    transform:translateY(-20px);
+
+}
+
+.feature-card:hover .feature-back{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/*==================================================
+                TABLET
+==================================================*/
+
+@media(max-width:991px){
+
+.feature-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.feature-card{
+
+    height:420px;
+
+}
+
+}
+
+
+/*==================================================
+                MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.feature-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.feature-card{
+
+    height:380px;
+
+}
+
+.feature-front{
+
+    padding:25px;
+
+}
+
+.feature-front h3{
+
+    font-size:1.6rem;
+
+}
+
+.feature-back{
+
+    padding:28px;
+
+}
+
+.feature-back h3{
+
+    font-size:1.45rem;
+
+}
+
+.feature-back p{
+
+    font-size:.95rem;
+
+}
+
+}

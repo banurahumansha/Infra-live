@@ -1,0 +1,1150 @@
+.hero-badge{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        135deg,
+        #E9F4FF,
+        #CFE8FF
+    );
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:25px;
+
+}
+/*==========================
+ABOUT HERO
+==========================*/
+
+.about-hero{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+   overflow:hidden;
+
+}
+
+.hero-title{
+
+    display:inline-block;
+
+    color:#0B5ED7;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+    max-width:700px;
+       margin-top:0;
+}
+
+.hero-tag{
+
+    font-size:70px;
+
+    font-weight:800;
+
+    background:linear-gradient(
+        90deg,
+        #0B5ED7,
+        #6EA8FE,
+        #BFD9FF
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+    color:transparent;
+     display:inline-block;
+
+    margin-bottom:40px;
+
+
+}
+
+.hero-text{
+
+    font-size:21px;
+
+    color:#6B7280;
+
+    line-height:1.9;
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    font-weight:400;
+
+}
+
+.about-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+
+    height:420px;
+
+    background:linear-gradient(135deg,#0B5ED7,#00B894);
+
+    opacity:.08;
+
+    border-radius:55% 45% 65% 35% / 45% 60% 40% 55%;
+
+    top:-180px;
+
+    right:-150px;
+
+    filter:blur(30px);
+
+}
+.about-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(0,183,255,.06);
+
+    bottom:-120px;
+
+    left:-100px;
+
+    filter:blur(8px);
+
+}
+
+/*==========================
+ELV HERO
+==========================*/
+.solution-hero{
+background: linear-gradient(
+    135deg,
+    #F7F5FF 0%,
+    #CFC7FF 100%
+);
+    position:relative;
+
+    overflow:hidden;
+
+    padding:120px 0 80px;
+
+
+}
+
+.solution-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    border-radius:50%;
+
+    background:rgba(253, 121, 168, .10);
+    top:-250px;
+
+    right:-200px;
+
+}
+
+.solution-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:380px;
+
+    height:380px;
+
+    border-radius:50%;
+
+    background:rgba(253, 121, 168, .10);
+
+    bottom:-120px;
+
+    left:-120px;
+
+}
+
+.solution-hero .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+@media(max-width:992px){
+
+.solution-hero{
+
+    padding:100px 0 80px;
+
+    text-align:center;
+
+}
+
+.solution-title{
+
+    font-size:46px;
+
+}
+
+.solution-subtitle{
+
+    margin:auto;
+
+}
+
+.service-section{
+
+    padding:80px 0;
+
+}
+
+.service-section h2{
+
+    margin-top:35px;
+
+    font-size:34px;
+
+}
+
+.cta-box{
+
+    padding:50px 30px;
+
+}
+
+.cta-box h2{
+
+    font-size:34px;
+
+}
+
+}
+.elv-tag{
+
+    font-size:70px;
+
+    font-weight:800;
+background: linear-gradient(
+    135deg,
+    #6D28D9,
+    #8B5CF6
+);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+    color:transparent;
+     display:inline-block;
+
+    margin-bottom:40px;
+
+
+}
+
+.elv-title{
+
+    display:inline-block;
+
+    color:#0B5ED7;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+    max-width:700px;
+       margin-top:0;
+}
+.elv-text{
+
+    font-size:21px;
+
+    color:#6B7280;
+
+    line-height:1.9;
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    font-weight:400;
+
+}
+
+/*==========================
+Cyber Security HERO
+==========================*/
+
+.cyber-hero{
+background:background: linear-gradient(
+    135deg,
+    #FFF5F5 0%,
+    #FECACA 100%
+);
+    position:relative;
+
+    overflow:hidden;
+
+    padding:120px 0 80px;
+
+
+}
+.cyber-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    border-radius:50%;
+
+    background:rgba(139, 92, 246, .08);
+    top:-250px;
+
+    right:-200px;
+
+}
+
+.cyber-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:380px;
+
+    height:380px;
+
+    border-radius:50%;
+
+    background:rgba(139, 92, 246, .08);
+
+    bottom:-120px;
+
+    left:-120px;
+
+}
+
+.cyber-tag{
+
+    font-size:70px;
+
+    font-weight:800;
+  background: linear-gradient(135deg, #4c0519, #200007);background: linear-gradient(
+    135deg,
+    #DC2626,
+    #EF4444
+);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+    color:transparent;
+     display:inline-block;
+
+    margin-bottom:40px;
+
+
+}
+
+.cyber-title{
+
+    display:inline-block;
+
+    color:#0B5ED7;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+    max-width:700px;
+       margin-top:0;
+}
+.cyber-text{
+
+    font-size:21px;
+
+    color:#6B7280;
+
+    line-height:1.9;
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    font-weight:400;
+
+}
+
+/*==========================
+Managed Services HERO
+==========================*/
+
+.managed-hero{
+background: linear-gradient(
+    135deg,
+    #F4FAFF 0%,
+    #A7D8FF 100%
+);
+    position:relative;
+
+    overflow:hidden;
+
+    padding:120px 0 80px;
+
+
+}
+.managed-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    border-radius:50%;
+
+    background:rgba(139, 92, 246, .08);
+    top:-250px;
+
+    right:-200px;
+
+}
+
+.managed-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:380px;
+
+    height:380px;
+
+    border-radius:50%;
+
+    background:rgba(139, 92, 246, .08);
+
+    bottom:-120px;
+
+    left:-120px;
+
+}
+
+.managed-tag{
+
+    font-size:70px;
+
+    font-weight:800;
+background: linear-gradient(
+    135deg,
+    #2563EB,
+    #3B82F6
+);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+    color:transparent;
+     display:inline-block;
+
+    margin-bottom:40px;
+
+
+}
+
+.managed-title{
+
+    display:inline-block;
+
+    color:#0B5ED7;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+    max-width:700px;
+       margin-top:0;
+}
+.managed-text{
+
+    font-size:21px;
+
+    color:#6B7280;
+
+    line-height:1.9;
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    font-weight:400;
+
+}
+
+/*==========================
+Staffing Services HERO
+==========================*/
+
+.staff-hero{
+background: linear-gradient(
+    135deg,
+    #FFF9F2 0%,
+    #FFD79A 100%
+);
+    position:relative;
+
+    overflow:hidden;
+
+    padding:120px 0 80px;
+
+
+}
+.staff-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    border-radius:50%;
+
+    background:rgba(139, 92, 246, .08);
+    top:-250px;
+
+    right:-200px;
+
+}
+
+.staff-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:380px;
+
+    height:380px;
+
+    border-radius:50%;
+
+    background:rgba(139, 92, 246, .08);
+
+    bottom:-120px;
+
+    left:-120px;
+
+}
+
+.staff-tag{
+
+    font-size:70px;
+
+    font-weight:800;
+background: linear-gradient(
+    135deg,
+    #EA580C,
+    #F97316
+);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+    color:transparent;
+     display:inline-block;
+
+    margin-bottom:40px;
+
+
+}
+
+.staff-title{
+
+    display:inline-block;
+
+    color:#0B5ED7;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+    max-width:700px;
+       margin-top:0;
+}
+.staff-text{
+
+    font-size:21px;
+
+    color:#6B7280;
+
+    line-height:1.9;
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    font-weight:400;
+
+}
+/*==========================
+AMC Services HERO
+==========================*/
+
+.amc-hero{
+background: linear-gradient(
+    135deg,
+    #FFF9F2 0%,
+    #FFD79A 100%
+);
+    position:relative;
+
+    overflow:hidden;
+
+    padding:120px 0 80px;
+
+
+}
+.amc-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    border-radius:50%;
+
+    background:rgba(139, 92, 246, .08);
+    top:-250px;
+
+    right:-200px;
+
+}
+
+.amc-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:380px;
+
+    height:380px;
+
+    border-radius:50%;
+
+    background:rgba(139, 92, 246, .08);
+
+    bottom:-120px;
+
+    left:-120px;
+
+}
+
+.amc-tag{
+
+    font-size:70px;
+
+    font-weight:800;
+background: linear-gradient(
+    135deg,
+    #EA580C,
+    #F97316
+);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+    color:transparent;
+     display:inline-block;
+
+    margin-bottom:40px;
+
+
+}
+
+.amc-title{
+
+    display:inline-block;
+
+    color:#0B5ED7;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+    max-width:700px;
+       margin-top:0;
+}
+.amc-text{
+
+    font-size:21px;
+
+    color:#6B7280;
+
+    line-height:1.9;
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    font-weight:400;
+
+}
+
+
+/* ===========================
+   PROCESS SECTION
+=========================== */
+
+.process-section{
+    margin-top:80px;
+}
+
+.process-section h3{
+    font-size:2rem;
+    font-weight:700;
+    color:#1F2937;
+    margin-bottom:50px;
+}
+
+.process-section .feature-card{
+
+    height:100%;
+
+    position:relative;
+
+    padding:40px 25px;
+
+    border-radius:18px;
+
+    background:#fff;
+
+    transition:.35s ease;
+
+    border:1px solid #E5E7EB;
+
+}
+
+.process-section .feature-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+.process-section h5{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #60A5FA
+    );
+
+    color:#fff;
+
+    font-size:1.6rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:700;
+
+}
+
+.process-section strong{
+
+    display:block;
+
+    font-size:1.2rem;
+
+    color:#111827;
+
+    margin-bottom:12px;
+
+}
+
+.process-section p{
+
+    color:#6B7280;
+
+    line-height:1.7;
+
+}
+
+@media(max-width:768px){
+
+.process-section .col-md-3::after{
+
+display:none;
+
+}
+
+}
+
+.process-section .col-md-3{
+
+    position:relative;
+
+}
+
+.process-section .col-md-3:not(:last-child)::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:35px;
+
+    right:-25px;
+
+    width:50px;
+
+    height:3px;
+
+    background:#CBD5E1;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    padding:8px 20px;
+
+    border-radius:50px;
+
+    color:#fff;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #3B82F6
+    );
+
+}
+
+
+.section-tag-y{
+
+    display:inline-block;
+
+    padding:8px 20px;
+
+    border-radius:50px;
+
+    color:#fff;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #3B82F6
+    );
+
+}
+
+
+
+
+/*==========================================
+FOOTER
+==========================================*/
+
+.inas-footer{
+
+    background:#0F172A;
+
+    color:#CBD5E1;
+
+    padding:80px 0 25px;
+
+}
+
+.footer-logo{
+
+    width:180px;
+
+    margin-bottom:25px;
+
+}
+.footer-linkedin-icon{
+
+    width:35px;
+
+    height:35px;
+
+    object-fit:contain;
+
+}
+.footer-about{
+    margin:0;
+    line-height:1.9;
+
+    color:#94A3B8;
+
+}
+
+.inas-footer h5{
+
+    color:#fff;
+
+    margin-bottom:25px;
+
+    font-weight:700;
+
+}
+
+.inas-footer ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.inas-footer ul li{
+
+    margin-bottom:14px;
+
+}
+
+.inas-footer a{
+
+    color:#94A3B8;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.inas-footer a:hover{
+
+    color:#7EF7C5;
+
+}
+
+.footer-contact li i.fas{
+
+    width:25px;
+
+    color:#94A3B8 !important;
+
+}
+
+.footer-social{
+
+    margin-top:25px;
+
+}
+
+.footer-social a{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:#1E293B;
+
+    margin-right:10px;
+
+    color:#fff;
+
+}
+
+.footer-social a:hover{
+
+    background:#25D366;
+
+}
+
+.inas-footer hr{
+
+    margin:50px 0 25px;
+
+    border-color:#334155;
+
+}
+
+.footer-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-bottom p{
+
+    margin:0;
+
+}
+
+.footer-bottom div a{
+
+    margin:0 10px;
+
+}
+
+.footer-company{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+
+@media(max-width:768px){
+
+.footer-bottom{
+
+flex-direction:column;
+
+gap:15px;
+
+text-align:center;
+
+}
+
+}
+
+.footer-contact li{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.footer-contact li span{
+    max-width:220px;
+    overflow-wrap:break-word;
+}
