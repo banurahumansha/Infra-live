@@ -15,8 +15,8 @@ body.page-home{
         .hero-slider{
         position:relative;
         width:100%;
-        height:100vh;
-        min-height:700px;
+        height:90vh;
+        min-height:600px;
         overflow:hidden;
          padding: 0;
     }
@@ -107,7 +107,7 @@ body.page-home{
 
 .hero-title-i{
     font-family: 'Graphik Regular';
-    font-size:70px;
+    font-size:60px;
 
     font-weight:400;
 
