@@ -1,0 +1,29 @@
+
+/**++++++++++++++++++++ CTA ++++++++++**********/
+body.page-passive {
+
+    background:
+        radial-gradient(circle at 10% 15%, rgba(124,77,255,.16), transparent 35%),
+        radial-gradient(circle at 90% 25%, rgba(0,229,255,.08), transparent 30%),
+        radial-gradient(circle at 50% 100%, rgba(139,92,246,.10), transparent 40%),
+        linear-gradient(180deg,#0a081d 0%, #11152d 50%, #08111f 100%);
+
+    color:#fff;
+}
+body.page-passive.cta-box{
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #7c3aed,
+        #14b8a6
+    );
+
+    color:#ffffff;
+
+}
+/**++++++++++++++++++++ CTA ++++++++++**********/
+.elv-hero.passive{
+    background-image:url("../images/bg/passive.webp");
+}

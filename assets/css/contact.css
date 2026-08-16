@@ -30,14 +30,14 @@ body.page-contact .cta-box{
 
 }
 
-.contact-main-section{
+/* .contact-main-section{
 
     position:relative;
 
     overflow:hidden;
     padding:0 0 110px;
 
-}
+} */
 
 
 .contact-flow-wrapper{
@@ -91,9 +91,9 @@ CONTACT HERO
     height: 600px;
 }
 
-.hero{
+/* .contact-hero{
     margin-top: 100px;
-}
+} */
 
 
 #inasNetwork{
@@ -569,7 +569,7 @@ CONTACT FORM
 
 .contact-form-card{
 
-    max-width:1150px;
+    max-width:950px;
     margin:0 auto;
 
     padding:60px;
