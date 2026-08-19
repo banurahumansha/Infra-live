@@ -40,6 +40,12 @@ body.page-passive.cta-box{
     color:#a78bfa;
 }
 
-.elv-carousel-slide.wireless .common-carousel-image.slide1 img {
-    object-position: center center;
+.elv-carousel-slide.wireless .common-carousel-image.slide2 img {
+    object-position: center;
+}
+.elv-carousel-slide.wireless .common-carousel-image.slide3 img {
+    object-position: 30% center;
+}
+.elv-carousel-slide.wireless .common-carousel-image.slide5 img {
+    object-position: center 20%;
 }
