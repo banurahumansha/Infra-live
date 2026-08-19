@@ -1,14 +1,35 @@
 
 /**++++++++++++++++++++ CTA ++++++++++**********/
+
 body.page-passive {
 
-    background:
-        radial-gradient(circle at 10% 15%, rgba(124,77,255,.16), transparent 35%),
-        radial-gradient(circle at 90% 25%, rgba(0,229,255,.08), transparent 30%),
-        radial-gradient(circle at 50% 100%, rgba(139,92,246,.10), transparent 40%),
-        linear-gradient(180deg,#0a081d 0%, #11152d 50%, #08111f 100%);
+   background:
+    radial-gradient(
+        circle at 10% 15%,
+        rgba(91, 45, 150, .18),
+        transparent 35%
+    ),
 
-    color:#fff;
+    radial-gradient(
+        circle at 90% 25%,
+        rgba(72, 52, 130, .12),
+        transparent 30%
+    ),
+
+    radial-gradient(
+        circle at 50% 100%,
+        rgba(76, 42, 120, .14),
+        transparent 40%
+    ),
+
+    linear-gradient(
+        180deg,
+        #080512 0%,
+        #10091f 50%,
+        #070b16 100%
+    );
+
+color:#fff;
 }
 body.page-passive.cta-box{
 
@@ -16,8 +37,8 @@ body.page-passive.cta-box{
 
     linear-gradient(
         135deg,
-        #7c3aed,
-        #14b8a6
+        #2c0649,
+        #320351
     );
 
     color:#ffffff;

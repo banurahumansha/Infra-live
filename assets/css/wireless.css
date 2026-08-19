@@ -39,3 +39,7 @@ body.page-passive.cta-box{
 .elv-section-header.wireless .elv-section-tag{
     color:#a78bfa;
 }
+
+.elv-carousel-slide.wireless .common-carousel-image.slide1 img {
+    object-position: center center;
+}

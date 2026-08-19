@@ -382,12 +382,13 @@
     gap:80px;
     align-items:stretch;
     margin-top: 40px;
-
+    height: 550px;
 }
 
 .elv-overview-image{
     overflow:hidden;
         min-height:550px;
+        width: 600px;
             border-radius:24px;
 
 }
@@ -770,7 +771,7 @@
 
     grid-template-rows:
         auto
-        380px
+        680px
         auto !important;
 
     min-height: auto !important;
@@ -782,7 +783,7 @@
    ========================================================= */
 
 .elv-carousel-slide .common-carousel-content {
-
+    
     grid-column: 1;
     grid-row: 1;
 
@@ -790,12 +791,7 @@
 
     padding: 45px 6vw 30px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #151c25 0%,
-            #0d1218 100%
-        );
+   
 }
 
 
@@ -810,7 +806,7 @@
 
     width: 100%;
 
-    height: 380px;
+    height: 680px;
 
     min-height: 0;
 
@@ -821,7 +817,6 @@
 .elv-carousel-slide .common-carousel-image img {
 
     width: 100%;
-    height: 100%;
 
     display: block;
 
@@ -834,7 +829,6 @@
    ========================================================= */
 
 .elv-carousel-slide .common-carousel-features {
-
     grid-column: 1;
     grid-row: 3;
 
