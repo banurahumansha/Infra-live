@@ -771,11 +771,15 @@
 
     grid-template-rows:
         auto
-        680px
+        480px
         auto !important;
 
     min-height: auto !important;
 }
+
+/* .elv-carousel-slide .common-carousel-window {
+   background-image: url("../images/wireless/slide1.jpg");
+} */
 
 
 /* =========================================================
@@ -806,7 +810,7 @@
 
     width: 100%;
 
-    height: 680px;
+    height: 480px;
 
     min-height: 0;
 
