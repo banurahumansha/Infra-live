@@ -1,0 +1,47 @@
+body.page-av {
+
+   background:
+    radial-gradient(
+        circle at 10% 15%,
+        rgba(116, 18, 148, 0.18),
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at 90% 25%,
+        rgba(44, 10, 63, 0.12),
+        transparent 30%
+    ),
+
+    radial-gradient(
+        circle at 50% 100%,
+        rgba(35, 2, 43, 0.14),
+        transparent 40%
+    ),
+
+    linear-gradient(
+        180deg,
+        #080512 0%,
+        #10091f 50%,
+        #070b16 100%
+    );
+
+color:#fff;
+}
+body.page-av.cta-box{
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #7c3aed,
+        #14b8a6
+    );
+
+    color:#ffffff;
+
+}
+.elv-hero.av{
+    background-image:url("../images/bg/av.png");
+}
+

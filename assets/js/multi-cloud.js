@@ -13,7 +13,7 @@ const cloudData = {
     "Accelerating enterprise workloads with secure, scalable and optimized AWS cloud solutions — from migration and modernization to AI-driven innovation.",
 
 
-    features:[
+    features:[  
 
         "Microsoft Workloads on AWS (SQL Server, AD, .NET)",
 
@@ -90,7 +90,7 @@ const cloudData = {
 },
 
 
-    ibm: {
+ibm: {
 
     title:"IBM Cloud + Hybrid",
 
@@ -119,7 +119,7 @@ const cloudData = {
 
 },
 
-    oracle: {
+oracle: {
 
     title:"Oracle Cloud Infrastructure",
 

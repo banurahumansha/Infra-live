@@ -170,7 +170,32 @@ body.page-rs .cta-box{
     }
 
 }
+/* ================================
+   TABLET
+================================ */
 
+@media (max-width: 991px) {
+
+    .rs-hero {
+        min-height: 75vh;
+        background-position: center center;
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 576px) {
+
+    .rs-hero {
+        min-height: 70vh;
+        background-position: center center;
+    }
+
+}
 /* =========================
    TABLET
    ========================= */

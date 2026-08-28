@@ -4,17 +4,17 @@ body.page-ip {
   background:
     radial-gradient(
         circle at 10% 15%,
-        rgba(0, 19, 7, 0.22),
+        rgba(3, 13, 7, 0.22),
         transparent 35%
     ),
     radial-gradient(
         circle at 90% 25%,
-        rgba(6, 78, 59, .18),
+        rgba(2, 17, 13, 0.18),
         transparent 30%
     ),
     radial-gradient(
         circle at 50% 100%,
-        rgba(20, 83, 45, .20),
+        rgba(1, 10, 5, 0.2),
         transparent 40%
     ),
     linear-gradient(
@@ -47,7 +47,7 @@ body.page-ip.cta-box{
     color:#7c3aed;
 }
 
-.elv-section-header.active h2 span{
+.elv-section-header.ip h2 span{
     background:linear-gradient(
         90deg,
         #a78bfa,
@@ -58,10 +58,15 @@ body.page-ip.cta-box{
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
-.elv-section-header.active .elv-section-tag i{
+.elv-section-header.ip .elv-section-tag i{
     color:#1cb86a;
     font-size: 24px;
 }
-.elv-section-header.active .elv-section-tag{
+.elv-section-header.ip .elv-section-tag{
     color:#a78bfa;
 }
+ .elv-services-section.ip .elv-service-card{
+        background:#013410;
+
+}
+

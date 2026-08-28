@@ -1,6 +1,6 @@
 
 /**++++++++++++++++++++ CTA ++++++++++**********/
-body.page-passive {
+body.page-active {
 
    background:
     radial-gradient(
@@ -30,7 +30,7 @@ body.page-passive {
 
 color:#fff;
 }
-body.page-passive.cta-box{
+body.page-active.cta-box{
 
     background:
 
@@ -44,14 +44,14 @@ body.page-passive.cta-box{
 
 }
 /**++++++++++++++++++++ CTA ++++++++++**********/
-.elv-hero.active{
+.elv-hero.active-pg{
     background-image:url("../images/bg/active.webp");
 }
-.elv-service-card.active i{
+.elv-service-card.active-pg i{
     color:#7c3aed;
 }
 
-.elv-section-header.active h2 span{
+.elv-section-header.active-pg h2 span{
     background:linear-gradient(
         90deg,
         #a78bfa,
@@ -62,21 +62,21 @@ body.page-passive.cta-box{
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
-.elv-section-header.active .elv-section-tag i{
+.elv-section-header.active-pg .elv-section-tag i{
     color:#1cb86a;
     font-size: 24px;
 }
-.elv-section-header.active .elv-section-tag{
+.elv-section-header.active-pg .elv-section-tag{
     color:#a78bfa;
 }
 
 
-.elv-service-card.active{
+.elv-service-card.active-pg{
     background:#17122b;
     border:1px solid rgba(139,92,246,.18);
 }
 
-.elv-services-section.active .elv-service-card::before{
+.elv-services-section.active-pg .elv-service-card::before{
 
     content:"";
 
@@ -100,7 +100,7 @@ body.page-passive.cta-box{
     animation:borderMove 2.5s linear infinite;
 }
 
-.elv-services-section.active .elv-service-card:hover{
+.elv-services-section.active-pg .elv-service-card:hover{
 
     border-color:rgba(139,92,246,.45);
 

@@ -1080,7 +1080,7 @@ COLUMN 3
 
         background:#0a1220 !important;
 
-        color:#fff !important;
+        color:#de6666 !important;
 
         font-size:15px;
 
@@ -1236,16 +1236,17 @@ COLUMN 3
 
     .navbar-toggler{
 
-        border:1px solid rgba(255,255,255,.25);
+        border:1px solid rgba(232, 225, 225, 0.25);
 
         padding:8px 10px;
 
         border-radius:8px;
-
         background:transparent !important;
 
         transition:.3s ease;
-    }
+            color: #fff !important;
+
+    }   
 
 
     .navbar-toggler:focus{
