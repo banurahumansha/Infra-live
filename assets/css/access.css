@@ -1,0 +1,115 @@
+
+/**++++++++++++++++++++ CTA ++++++++++**********/
+body.page-access {
+
+   background:
+    radial-gradient(
+        circle at 10% 15%,
+        rgba(91, 45, 150, .18),
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at 90% 25%,
+        rgba(72, 52, 130, .12),
+        transparent 30%
+    ),
+
+    radial-gradient(
+        circle at 50% 100%,
+        rgba(76, 42, 120, .14),
+        transparent 40%
+    ),
+
+    linear-gradient(
+        180deg,
+        #080512 0%,
+        #10091f 50%,
+        #070b16 100%
+    );
+
+color:#fff;
+}
+body.page-access.cta-box{
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #7c3aed,
+        #14b8a6
+    );
+
+    color:#ffffff;
+
+}
+/**++++++++++++++++++++ CTA ++++++++++**********/
+.elv-hero.access{
+        background-image:url("../images/access/hero.jpg");
+
+    /* background-image:url("../images/bg/access.png"); */
+}
+.elv-service-card.access i{
+    color:#7c3aed;
+}
+
+.elv-section-header.access h2 span{
+    background:linear-gradient(
+        90deg,
+        #a78bfa,
+        #8b5cf6,
+        #6366f1
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.elv-section-header.active-pg .elv-section-tag i{
+    color:#1cb86a;
+    font-size: 24px;
+}
+.elv-section-header.active-pg .elv-section-tag{
+    color:#a78bfa;
+}
+
+
+.elv-service-card.active-pg{
+    background:#17122b;
+    border:1px solid rgba(139,92,246,.18);
+}
+
+.elv-services-section.active-pg .elv-service-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-35%;
+
+    width:35%;
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #7c3aed,
+        #a78bfa,
+        #6366f1,
+        transparent
+    );
+
+    animation:borderMove 2.5s linear infinite;
+}
+
+.elv-services-section.active-pg .elv-service-card:hover{
+
+    border-color:rgba(139,92,246,.45);
+
+    box-shadow:
+        0 15px 40px rgba(124,58,237,.18);
+
+    transform:translateY(-6px);
+
+    background-color: #a78bfa;
+}

@@ -1,28 +1,8 @@
 /**++++++++++++++++++++ CTA ++++++++++**********/
 body.page-ip {
+    background: linear-gradient(rgb(23, 22, 22) 0%, rgb(17, 29, 49) 100%);
+      /* background: linear-gradient(rgb(13, 23, 40) 0%, rgb(17, 29, 49) 100%); */
 
-  background:
-    radial-gradient(
-        circle at 10% 15%,
-        rgba(3, 13, 7, 0.22),
-        transparent 35%
-    ),
-    radial-gradient(
-        circle at 90% 25%,
-        rgba(2, 17, 13, 0.18),
-        transparent 30%
-    ),
-    radial-gradient(
-        circle at 50% 100%,
-        rgba(1, 10, 5, 0.2),
-        transparent 40%
-    ),
-    linear-gradient(
-        180deg,
-        #02140d 0%,
-        #052b1b 50%,
-        #01100a 100%
-    );
 
 color:#fff;
 }
@@ -41,7 +21,7 @@ body.page-ip.cta-box{
 }
 /**++++++++++++++++++++ CTA ++++++++++**********/
 .elv-hero.ip{
-    background-image:url("../images/bg/ip.webp");
+    background-image:url("../images/ip/hero.jpg");
 }
 .elv-service-card.ip i{
     color:#7c3aed;
@@ -66,7 +46,8 @@ body.page-ip.cta-box{
     color:#a78bfa;
 }
  .elv-services-section.ip .elv-service-card{
-        background:#013410;
+        background: transparent;
+        opacity: .80;
 
 }
 

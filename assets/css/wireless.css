@@ -25,7 +25,7 @@ body.page-passive.cta-box{
 /**++++++++++++++++++++ CTA ++++++++++**********/
 
 .elv-hero.wireless{
-    background-image:url("../images/bg/wireless.webp");
+    background-image:url("../images/wireless/hero.jpg");
 }
 .elv-service-card.wireless i{
     color:#7c3aed;
@@ -33,7 +33,7 @@ body.page-passive.cta-box{
 
 .elv-section-header.wireless .elv-section-tag i{
     color:#1cb86a;
-    font-size: 24px;
+    font-size: 2
 }
 
 .elv-section-header.wireless .elv-section-tag{

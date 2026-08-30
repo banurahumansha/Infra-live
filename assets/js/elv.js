@@ -23,3 +23,51 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+// image carousel
+
+const accessSlides = document.querySelectorAll(".access-slide");
+const accessDots = document.querySelectorAll(".access-dot");
+
+let accessCurrentSlide = 0;
+
+function showAccessSlide(index) {
+
+    accessSlides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+    });
+
+    accessDots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+    });
+
+}
+
+function nextAccessSlide() {
+
+    accessCurrentSlide =
+        (accessCurrentSlide + 1) % accessSlides.length;
+
+    showAccessSlide(accessCurrentSlide);
+
+}
+
+
+/* AUTO PLAY */
+
+setInterval(nextAccessSlide, 4000);
+
+
+/* DOT CLICK */
+
+accessDots.forEach((dot, index) => {
+
+    dot.addEventListener("click", () => {
+
+        accessCurrentSlide = index;
+
+        showAccessSlide(accessCurrentSlide);
+
+    });
+
+});

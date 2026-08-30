@@ -45,7 +45,7 @@ body.page-active.cta-box{
 }
 /**++++++++++++++++++++ CTA ++++++++++**********/
 .elv-hero.active-pg{
-    background-image:url("../images/bg/active.webp");
+    background-image:url("../images/active/hero.jpg");
 }
 .elv-service-card.active-pg i{
     color:#7c3aed;
