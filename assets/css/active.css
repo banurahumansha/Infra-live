@@ -5,19 +5,19 @@ body.page-active {
    background:
     radial-gradient(
         circle at 10% 15%,
-        rgba(91, 45, 150, .18),
+        rgba(10, 7, 13, 0.18),
         transparent 35%
     ),
 
     radial-gradient(
         circle at 90% 25%,
-        rgba(72, 52, 130, .12),
+        rgba(20, 19, 24, 0.12),
         transparent 30%
     ),
 
     radial-gradient(
         circle at 50% 100%,
-        rgba(76, 42, 120, .14),
+        rgba(12, 1, 27, 0.14),
         transparent 40%
     ),
 
